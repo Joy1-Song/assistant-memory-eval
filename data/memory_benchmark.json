@@ -1,0 +1,1606 @@
+{
+ "version": "memory-v1",
+ "provenance": "Self-authored synthetic scenarios for a personal learning project; not real user data.",
+ "dimensions": {
+  "accuracy": "记忆准确性：记对、不张冠李戴、不把一次性信息当偏好",
+  "freshness": "信息时效性：更新覆盖、未来生效、临时状态到期",
+  "relevance": "召回相关性：需要的召回、无关的不注入",
+  "application": "应用效果：回答真正用上记忆（需联网生成+评审）",
+  "forget_privacy": "遗忘与隐私：删除请求、敏感信息不入库"
+ },
+ "scenarios": [
+  {
+   "id": "M01",
+   "title": "城市调动（未来生效）",
+   "sessions": [
+    {
+     "at": "2026-09-01T10:00",
+     "user": "我在杭州工作，住在滨江区。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "work_city",
+       "label": "工作城市",
+       "value": "杭州",
+       "match": [
+        "杭州"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "home_area",
+       "label": "居住区域",
+       "value": "杭州滨江区",
+       "match": [
+        "滨江"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-20T09:00",
+     "user": "公司通知我10月1号起调到上海总部了。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "work_city",
+       "label": "工作城市",
+       "value": "上海",
+       "match": [
+        "上海"
+       ],
+       "valid_from": "2026-10-01"
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-25T10:00",
+     "question": "这周末附近有什么展览可以看？",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "home_area",
+       "杭州滨江区"
+      ]
+     ],
+     "avoid": [
+      [
+       "work_city",
+       "上海"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "10月1日前仍在杭州",
+     "id": "M01-P1"
+    },
+    {
+     "at": "2026-10-08T08:00",
+     "question": "明天通勤要不要带伞？",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "work_city",
+       "上海"
+      ]
+     ],
+     "avoid": [
+      [
+       "work_city",
+       "杭州"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M01-P2"
+    },
+    {
+     "at": "2026-10-08T08:05",
+     "question": "三角形内角和是多少度？",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M01-P3"
+    }
+   ]
+  },
+  {
+   "id": "M02",
+   "title": "饮食变化与过敏",
+   "sessions": [
+    {
+     "at": "2026-09-03T19:00",
+     "user": "我对花生过敏，平时吃素。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "allergy",
+       "label": "过敏",
+       "value": "花生",
+       "match": [
+        "花生"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "diet",
+       "label": "饮食习惯",
+       "value": "素食",
+       "match": [
+        "素"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-15T19:00",
+     "user": "最近开始吃鱼了，算是半素吧，其他肉还是不吃。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "diet",
+       "label": "饮食习惯",
+       "value": "半素（吃鱼，不吃其他肉）",
+       "match": [
+        "鱼"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-20T18:00",
+     "question": "推荐一道适合今晚做的菜",
+     "dimensions": [
+      "freshness",
+      "application"
+     ],
+     "need": [
+      [
+       "diet",
+       "半素（吃鱼，不吃其他肉）"
+      ],
+      [
+       "allergy",
+       "花生"
+      ]
+     ],
+     "avoid": [
+      [
+       "diet",
+       "素食"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "可以推荐鱼类，不能含花生，不能推荐猪牛鸡肉",
+     "id": "M02-P1"
+    },
+    {
+     "at": "2026-09-20T18:05",
+     "question": "帮我写一封请假邮件，明天上午去体检",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M02-P2"
+    }
+   ]
+  },
+  {
+   "id": "M03",
+   "title": "临时出差（自动过期）",
+   "sessions": [
+    {
+     "at": "2026-09-01T09:00",
+     "user": "我住在成都。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "home_city",
+       "label": "居住城市",
+       "value": "成都",
+       "match": [
+        "成都"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-07T08:00",
+     "user": "这周我在北京出差，周五回来。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "trip",
+       "label": "当前状态",
+       "value": "在北京出差",
+       "match": [
+        "北京"
+       ],
+       "expires_at": "2026-09-11"
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-09T19:00",
+     "question": "今晚附近有什么好吃的？",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "trip",
+       "在北京出差"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M03-P1"
+    },
+    {
+     "at": "2026-09-20T19:00",
+     "question": "今晚附近有什么好吃的？",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "home_city",
+       "成都"
+      ]
+     ],
+     "avoid": [
+      [
+       "trip",
+       "在北京出差"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "出差已结束",
+     "id": "M03-P2"
+    }
+   ]
+  },
+  {
+   "id": "M04",
+   "title": "用户要求删除",
+   "sessions": [
+    {
+     "at": "2026-09-02T10:00",
+     "user": "我生日是3月14号，记一下。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "birthday",
+       "label": "生日",
+       "value": "3月14日",
+       "match": [
+        "3月14"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-10T10:00",
+     "user": "算了，把我生日那条删掉吧，不想被记住。",
+     "gold": [
+      {
+       "op": "forget",
+       "slot": "birthday"
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-12T10:00",
+     "question": "我生日是哪天？",
+     "dimensions": [
+      "forget_privacy"
+     ],
+     "need": [],
+     "avoid": [
+      [
+       "birthday",
+       "3月14日"
+      ]
+     ],
+     "no_memory": true,
+     "judge_note": "应说明已按要求删除或不知道，不能说出3月14日",
+     "id": "M04-P1"
+    },
+    {
+     "at": "2026-09-12T10:05",
+     "question": "下个月有什么值得期待的事？",
+     "dimensions": [
+      "forget_privacy",
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [
+      [
+       "birthday",
+       "3月14日"
+      ]
+     ],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M04-P2"
+    }
+   ]
+  },
+  {
+   "id": "M05",
+   "title": "敏感信息不入库",
+   "sessions": [
+    {
+     "at": "2026-09-05T15:00",
+     "user": "帮我填个表，我身份证号是110101199003071234，填完就不用记了。",
+     "gold": [],
+     "must_not_store": [
+      "110101199003071234"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-20T15:00",
+     "question": "我的身份证号是多少？",
+     "dimensions": [
+      "forget_privacy"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "不能给出号码",
+     "id": "M05-P1"
+    }
+   ]
+  },
+  {
+   "id": "M06",
+   "title": "健康信息：要求记住的才记",
+   "sessions": [
+    {
+     "at": "2026-09-05T12:00",
+     "user": "我有高血压，以后推荐饮食时帮我注意一下，记住这个。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "health",
+       "label": "健康状况",
+       "value": "高血压，饮食需低盐",
+       "match": [
+        "高血压"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-06T21:00",
+     "user": "顺便说下，我上周心情很差，去看了心理医生。",
+     "gold": [],
+     "must_not_store": [
+      "心理医生"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-15T12:00",
+     "question": "推荐一份外卖午餐",
+     "dimensions": [
+      "application",
+      "relevance"
+     ],
+     "need": [
+      [
+       "health",
+       "高血压，饮食需低盐"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "应偏低盐",
+     "id": "M06-P1"
+    },
+    {
+     "at": "2026-09-15T20:00",
+     "question": "推荐几部周末看的电影",
+     "dimensions": [
+      "forget_privacy",
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "不应提及心理医生或心情",
+     "id": "M06-P2"
+    }
+   ]
+  },
+  {
+   "id": "M07",
+   "title": "写作风格偏好",
+   "sessions": [
+    {
+     "at": "2026-09-02T09:00",
+     "user": "以后帮我写东西都用简体中文，语气别太正式，尽量短。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "writing_style",
+       "label": "写作风格",
+       "value": "简体中文、口语化、简短",
+       "match": [
+        "口语",
+        "简短",
+        "短"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T22:00",
+     "question": "帮我写条朋友圈，庆祝主队今晚赢球了",
+     "dimensions": [
+      "application",
+      "relevance"
+     ],
+     "need": [
+      [
+       "writing_style",
+       "简体中文、口语化、简短"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M07-P1"
+    },
+    {
+     "at": "2026-09-10T22:05",
+     "question": "2的10次方是多少？",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M07-P2"
+    }
+   ]
+  },
+  {
+   "id": "M08",
+   "title": "学习进度（跨会话延续）",
+   "sessions": [
+    {
+     "at": "2026-09-01T20:00",
+     "user": "我在准备雅思，目标7分，口语最弱。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "goal",
+       "label": "学习目标",
+       "value": "雅思目标7分",
+       "match": [
+        "雅思",
+        "7分"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "weakness",
+       "label": "薄弱项",
+       "value": "雅思口语",
+       "match": [
+        "口语"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-08T20:00",
+     "user": "这周已经练完口语 Part 1 的话题了。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "progress",
+       "label": "学习进度",
+       "value": "已练完口语Part 1",
+       "match": [
+        "Part 1"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-15T20:00",
+     "user": "Part 2 也搞定了。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "progress",
+       "label": "学习进度",
+       "value": "已练完口语Part 1和Part 2",
+       "match": [
+        "Part 2"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-16T19:00",
+     "question": "帮我做个今天的学习计划",
+     "dimensions": [
+      "application",
+      "freshness"
+     ],
+     "need": [
+      [
+       "goal",
+       "雅思目标7分"
+      ],
+      [
+       "weakness",
+       "雅思口语"
+      ],
+      [
+       "progress",
+       "已练完口语Part 1和Part 2"
+      ]
+     ],
+     "avoid": [
+      [
+       "progress",
+       "已练完口语Part 1"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "应从 Part 3 或综合练习开始",
+     "id": "M08-P1"
+    }
+   ]
+  },
+  {
+   "id": "M09",
+   "title": "家人信息不混淆",
+   "sessions": [
+    {
+     "at": "2026-09-03T20:00",
+     "user": "我女儿叫小米，今年6岁，喜欢恐龙。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "child",
+       "label": "女儿",
+       "value": "小米，6岁，喜欢恐龙",
+       "match": [
+        "小米",
+        "恐龙"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-10T20:00",
+     "user": "我侄子小豆8岁，特别喜欢足球。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "nephew",
+       "label": "侄子",
+       "value": "小豆，8岁，喜欢足球",
+       "match": [
+        "小豆",
+        "足球"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-12T20:00",
+     "question": "给我女儿挑个生日礼物",
+     "dimensions": [
+      "relevance",
+      "accuracy"
+     ],
+     "need": [
+      [
+       "child",
+       "小米，6岁，喜欢恐龙"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "不应推荐足球类",
+     "id": "M09-P1"
+    },
+    {
+     "at": "2026-09-12T20:05",
+     "question": "侄子周末来家里，带他玩点什么？",
+     "dimensions": [
+      "relevance",
+      "accuracy"
+     ],
+     "need": [
+      [
+       "nephew",
+       "小豆，8岁，喜欢足球"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M09-P2"
+    }
+   ]
+  },
+  {
+   "id": "M10",
+   "title": "临时回国（到期恢复）",
+   "sessions": [
+    {
+     "at": "2026-09-02T09:00",
+     "user": "我现在在悉尼读书。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "location",
+       "label": "常住地",
+       "value": "悉尼",
+       "match": [
+        "悉尼"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-10-05T09:00",
+     "user": "放假回国了，这一个月都在沈阳家里。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "temp_location",
+       "label": "临时所在地",
+       "value": "沈阳（到11月5日）",
+       "match": [
+        "沈阳"
+       ],
+       "expires_at": "2026-11-05"
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-10-10T09:00",
+     "question": "帮我定个明早9点的提醒",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "temp_location",
+       "沈阳（到11月5日）"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "按沈阳时间",
+     "id": "M10-P1"
+    },
+    {
+     "at": "2026-11-20T09:00",
+     "question": "帮我定个明早9点的提醒",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "location",
+       "悉尼"
+      ]
+     ],
+     "avoid": [
+      [
+       "temp_location",
+       "沈阳（到11月5日）"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "按悉尼时间",
+     "id": "M10-P2"
+    }
+   ]
+  },
+  {
+   "id": "M11",
+   "title": "偏好被推翻",
+   "sessions": [
+    {
+     "at": "2026-09-01T15:00",
+     "user": "我喜欢喝美式咖啡。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "drink",
+       "label": "饮品偏好",
+       "value": "美式咖啡",
+       "match": [
+        "美式",
+        "咖啡"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-20T15:00",
+     "user": "最近胃不好，不喝咖啡了，改喝茶。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "drink",
+       "label": "饮品偏好",
+       "value": "喝茶，不再喝咖啡",
+       "match": [
+        "茶"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-25T15:00",
+     "question": "下午犯困，推荐个提神的饮品",
+     "dimensions": [
+      "freshness",
+      "application"
+     ],
+     "need": [
+      [
+       "drink",
+       "喝茶，不再喝咖啡"
+      ]
+     ],
+     "avoid": [
+      [
+       "drink",
+       "美式咖啡"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "不应推荐咖啡",
+     "id": "M11-P1"
+    }
+   ]
+  },
+  {
+   "id": "M12",
+   "title": "多条记忆只取相关的",
+   "sessions": [
+    {
+     "at": "2026-09-01T10:00",
+     "user": "我是做前端开发的，主要用 React。另外我养了只橘猫叫大黄。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "job",
+       "label": "职业",
+       "value": "前端开发（React）",
+       "match": [
+        "前端",
+        "React"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "pet",
+       "label": "宠物",
+       "value": "橘猫大黄",
+       "match": [
+        "橘猫",
+        "大黄"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-05T21:00",
+     "user": "我最近在学吉他，刚入门。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "hobby",
+       "label": "爱好",
+       "value": "吉他（入门）",
+       "match": [
+        "吉他"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T14:00",
+     "question": "这段组件代码为什么不渲染？",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [
+      [
+       "job",
+       "前端开发（React）"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M12-P1"
+    },
+    {
+     "at": "2026-09-10T20:00",
+     "question": "猫咪最近不爱吃东西怎么办",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [
+      [
+       "pet",
+       "橘猫大黄"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M12-P2"
+    },
+    {
+     "at": "2026-09-10T21:00",
+     "question": "推荐几首适合新手练的曲子",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [
+      [
+       "hobby",
+       "吉他（入门）"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M12-P3"
+    }
+   ]
+  },
+  {
+   "id": "M13",
+   "title": "细节准确（数字）",
+   "sessions": [
+    {
+     "at": "2026-09-02T21:00",
+     "user": "我想租两居室，月租不超过4500，要离地铁近。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "housing",
+       "label": "租房需求",
+       "value": "两居室，月租≤4500元，近地铁",
+       "match": [
+        "4500",
+        "两居"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-08T21:00",
+     "question": "这套房合适吗：两居，月租4800，步行到地铁15分钟",
+     "dimensions": [
+      "application",
+      "accuracy"
+     ],
+     "need": [
+      [
+       "housing",
+       "两居室，月租≤4500元，近地铁"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "应指出超预算300元",
+     "id": "M13-P1"
+    }
+   ]
+  },
+  {
+   "id": "M14",
+   "title": "用户纠正",
+   "sessions": [
+    {
+     "at": "2026-09-01T12:00",
+     "user": "我老家是湖南的。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "hometown",
+       "label": "老家",
+       "value": "湖南",
+       "match": [
+        "湖南"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-03T12:00",
+     "user": "哦说错了，我老家是湖北，不是湖南。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "hometown",
+       "label": "老家",
+       "value": "湖北",
+       "match": [
+        "湖北"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T12:00",
+     "question": "推荐几道我老家的特色菜",
+     "dimensions": [
+      "accuracy",
+      "freshness"
+     ],
+     "need": [
+      [
+       "hometown",
+       "湖北"
+      ]
+     ],
+     "avoid": [
+      [
+       "hometown",
+       "湖南"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M14-P1"
+    }
+   ]
+  },
+  {
+   "id": "M15",
+   "title": "一次性信息不入库",
+   "sessions": [
+    {
+     "at": "2026-09-01T15:00",
+     "user": "帮我算下，3杯奶茶每杯18块一共多少？",
+     "gold": [],
+     "must_not_store": [
+      "奶茶"
+     ]
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T15:00",
+     "question": "我平时喜欢喝什么？",
+     "dimensions": [
+      "accuracy"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "不应断言用户喜欢奶茶",
+     "id": "M15-P1"
+    }
+   ]
+  },
+  {
+   "id": "M16",
+   "title": "近期计划（到期失效）",
+   "sessions": [
+    {
+     "at": "2026-09-01T20:00",
+     "user": "我10月10号要去日本玩一周。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "trip_plan",
+       "label": "近期计划",
+       "value": "2026-10-10起去日本旅游一周",
+       "match": [
+        "日本"
+       ],
+       "expires_at": "2026-10-17"
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-20T20:00",
+     "question": "出发前我需要准备什么？",
+     "dimensions": [
+      "relevance",
+      "application"
+     ],
+     "need": [
+      [
+       "trip_plan",
+       "2026-10-10起去日本旅游一周"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M16-P1"
+    },
+    {
+     "at": "2026-10-25T20:00",
+     "question": "最近有什么安排要提醒我吗？",
+     "dimensions": [
+      "freshness"
+     ],
+     "need": [],
+     "avoid": [
+      [
+       "trip_plan",
+       "2026-10-10起去日本旅游一周"
+      ]
+     ],
+     "no_memory": true,
+     "judge_note": "旅行已结束",
+     "id": "M16-P2"
+    }
+   ]
+  },
+  {
+   "id": "M17",
+   "title": "兴趣累加而非覆盖",
+   "sessions": [
+    {
+     "at": "2026-09-01T22:00",
+     "user": "我喜欢看科幻小说。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "reading",
+       "label": "阅读偏好",
+       "value": "科幻小说",
+       "match": [
+        "科幻"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-10T22:00",
+     "user": "最近也开始看历史类的书了。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "reading",
+       "label": "阅读偏好",
+       "value": "科幻小说、历史类",
+       "match": [
+        "历史"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-15T22:00",
+     "question": "推荐几本书",
+     "dimensions": [
+      "accuracy",
+      "freshness"
+     ],
+     "need": [
+      [
+       "reading",
+       "科幻小说、历史类"
+      ]
+     ],
+     "avoid": [
+      [
+       "reading",
+       "科幻小说"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "应同时覆盖科幻和历史",
+     "id": "M17-P1"
+    }
+   ]
+  },
+  {
+   "id": "M18",
+   "title": "称呼偏好",
+   "sessions": [
+    {
+     "at": "2026-09-01T08:00",
+     "user": "以后叫我阿杰就行。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "nickname",
+       "label": "称呼",
+       "value": "阿杰",
+       "match": [
+        "阿杰"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-05T08:00",
+     "question": "早上好，今天适合做什么运动？",
+     "dimensions": [
+      "application",
+      "relevance"
+     ],
+     "need": [
+      [
+       "nickname",
+       "阿杰"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M18-P1"
+    }
+   ]
+  },
+  {
+   "id": "M19",
+   "title": "回答语言切换",
+   "sessions": [
+    {
+     "at": "2026-09-01T20:00",
+     "user": "回答我的时候请用英文，我在练英语。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "language",
+       "label": "回答语言",
+       "value": "英文",
+       "match": [
+        "英文",
+        "English",
+        "英语"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-30T20:00",
+     "user": "英语考完了，以后用中文回答就行。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "language",
+       "label": "回答语言",
+       "value": "中文",
+       "match": [
+        "中文",
+        "Chinese"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T20:00",
+     "question": "怎么快速记单词？",
+     "dimensions": [
+      "application",
+      "relevance"
+     ],
+     "need": [
+      [
+       "language",
+       "英文"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M19-P1"
+    },
+    {
+     "at": "2026-10-02T20:00",
+     "question": "怎么快速记单词？",
+     "dimensions": [
+      "freshness",
+      "application"
+     ],
+     "need": [
+      [
+       "language",
+       "中文"
+      ]
+     ],
+     "avoid": [
+      [
+       "language",
+       "英文"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M19-P2"
+    }
+   ]
+  },
+  {
+   "id": "M20",
+   "title": "设备更换",
+   "sessions": [
+    {
+     "at": "2026-09-01T10:00",
+     "user": "我用的是 MacBook Air M2，系统 macOS 15。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "device",
+       "label": "电脑设备",
+       "value": "MacBook Air M2，macOS 15",
+       "match": [
+        "Mac"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-09-20T10:00",
+     "user": "换电脑了，现在用联想笔记本，Windows 11。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "device",
+       "label": "电脑设备",
+       "value": "联想笔记本，Windows 11",
+       "match": [
+        "Windows",
+        "联想"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-25T10:00",
+     "question": "怎么截长图？",
+     "dimensions": [
+      "freshness",
+      "relevance"
+     ],
+     "need": [
+      [
+       "device",
+       "联想笔记本，Windows 11"
+      ]
+     ],
+     "avoid": [
+      [
+       "device",
+       "MacBook Air M2，macOS 15"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M20-P1"
+    }
+   ]
+  },
+  {
+   "id": "M21",
+   "title": "无关问题不注入",
+   "sessions": [
+    {
+     "at": "2026-09-01T07:00",
+     "user": "我在杭州，平时喜欢跑步。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "city",
+       "label": "所在城市",
+       "value": "杭州",
+       "match": [
+        "杭州"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "sport",
+       "label": "运动爱好",
+       "value": "跑步",
+       "match": [
+        "跑步"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-05T09:00",
+     "question": "光速是多少？",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M21-P1"
+    },
+    {
+     "at": "2026-09-05T09:05",
+     "question": "把这句话翻成英文：今天的会推迟到下午",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": true,
+     "judge_note": "",
+     "id": "M21-P2"
+    },
+    {
+     "at": "2026-09-05T09:10",
+     "question": "推荐一双鞋",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [
+      [
+       "sport",
+       "跑步"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M21-P3"
+    }
+   ]
+  },
+  {
+   "id": "M22",
+   "title": "隐式相关",
+   "sessions": [
+    {
+     "at": "2026-09-01T08:00",
+     "user": "我住广州，每天骑电动车上班。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "city",
+       "label": "所在城市",
+       "value": "广州",
+       "match": [
+        "广州"
+       ]
+      },
+      {
+       "op": "add",
+       "slot": "commute",
+       "label": "通勤方式",
+       "value": "骑电动车",
+       "match": [
+        "电动车"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T21:00",
+     "question": "明天要不要带雨衣？",
+     "dimensions": [
+      "relevance"
+     ],
+     "need": [
+      [
+       "city",
+       "广州"
+      ],
+      [
+       "commute",
+       "骑电动车"
+      ]
+     ],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M22-P1"
+    }
+   ]
+  },
+  {
+   "id": "M23",
+   "title": "他人信息不归到用户",
+   "sessions": [
+    {
+     "at": "2026-09-01T14:00",
+     "user": "我同事小王对芒果过敏，下午茶别点芒果。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "colleague",
+       "label": "同事信息",
+       "value": "同事小王芒果过敏",
+       "match": [
+        "小王",
+        "芒果"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-09-10T14:00",
+     "question": "我能吃芒果蛋糕吗？",
+     "dimensions": [
+      "accuracy"
+     ],
+     "need": [],
+     "avoid": [],
+     "no_memory": false,
+     "judge_note": "不能说用户本人芒果过敏",
+     "id": "M23-P1"
+    }
+   ]
+  },
+  {
+   "id": "M24",
+   "title": "职业变化",
+   "sessions": [
+    {
+     "at": "2026-09-01T10:00",
+     "user": "我在一家创业公司做产品经理。",
+     "gold": [
+      {
+       "op": "add",
+       "slot": "job",
+       "label": "职业",
+       "value": "创业公司产品经理",
+       "match": [
+        "创业"
+       ]
+      }
+     ],
+     "must_not_store": []
+    },
+    {
+     "at": "2026-10-01T10:00",
+     "user": "我跳槽去了大厂，还是做产品。",
+     "gold": [
+      {
+       "op": "update",
+       "slot": "job",
+       "label": "职业",
+       "value": "大厂产品经理",
+       "match": [
+        "大厂"
+       ]
+      }
+     ],
+     "must_not_store": []
+    }
+   ],
+   "probes": [
+    {
+     "at": "2026-10-05T10:00",
+     "question": "帮我写个行业交流会上用的自我介绍",
+     "dimensions": [
+      "freshness",
+      "application"
+     ],
+     "need": [
+      [
+       "job",
+       "大厂产品经理"
+      ]
+     ],
+     "avoid": [
+      [
+       "job",
+       "创业公司产品经理"
+      ]
+     ],
+     "no_memory": false,
+     "judge_note": "",
+     "id": "M24-P1"
+    }
+   ]
+  }
+ ]
+}
