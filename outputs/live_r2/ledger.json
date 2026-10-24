@@ -1,0 +1,4271 @@
+{
+ "requests": [
+  {
+   "key": "extract:M01#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:46.460362+00:00",
+   "ms": 2993,
+   "prompt_tokens": 524,
+   "completion_tokens": 36
+  },
+  {
+   "key": "extract:M01#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:49.455655+00:00",
+   "ms": 1972,
+   "prompt_tokens": 557,
+   "completion_tokens": 57
+  },
+  {
+   "key": "extract:M02#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:51.429816+00:00",
+   "ms": 3070,
+   "prompt_tokens": 524,
+   "completion_tokens": 60
+  },
+  {
+   "key": "extract:M02#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:54.502036+00:00",
+   "ms": 1752,
+   "prompt_tokens": 582,
+   "completion_tokens": 50
+  },
+  {
+   "key": "extract:M03#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:56.255959+00:00",
+   "ms": 1537,
+   "prompt_tokens": 520,
+   "completion_tokens": 42
+  },
+  {
+   "key": "extract:M03#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:57.794317+00:00",
+   "ms": 1728,
+   "prompt_tokens": 550,
+   "completion_tokens": 50
+  },
+  {
+   "key": "extract:M04#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:59.523995+00:00",
+   "ms": 1629,
+   "prompt_tokens": 528,
+   "completion_tokens": 44
+  },
+  {
+   "key": "extract:M04#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:01.154807+00:00",
+   "ms": 1094,
+   "prompt_tokens": 554,
+   "completion_tokens": 15
+  },
+  {
+   "key": "extract:M05#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:02.250555+00:00",
+   "ms": 751,
+   "prompt_tokens": 551,
+   "completion_tokens": 5
+  },
+  {
+   "key": "extract:M06#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:03.002699+00:00",
+   "ms": 1369,
+   "prompt_tokens": 531,
+   "completion_tokens": 32
+  },
+  {
+   "key": "extract:M06#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:04.373220+00:00",
+   "ms": 794,
+   "prompt_tokens": 553,
+   "completion_tokens": 5
+  },
+  {
+   "key": "extract:M07#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:05.169046+00:00",
+   "ms": 1669,
+   "prompt_tokens": 534,
+   "completion_tokens": 49
+  },
+  {
+   "key": "extract:M08#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:06.839980+00:00",
+   "ms": 1910,
+   "prompt_tokens": 528,
+   "completion_tokens": 56
+  },
+  {
+   "key": "extract:M08#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:08.752489+00:00",
+   "ms": 2332,
+   "prompt_tokens": 566,
+   "completion_tokens": 75
+  },
+  {
+   "key": "extract:M08#2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:11.086294+00:00",
+   "ms": 3417,
+   "prompt_tokens": 584,
+   "completion_tokens": 95
+  },
+  {
+   "key": "extract:M09#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:14.504418+00:00",
+   "ms": 1605,
+   "prompt_tokens": 528,
+   "completion_tokens": 45
+  },
+  {
+   "key": "extract:M09#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:16.111381+00:00",
+   "ms": 2417,
+   "prompt_tokens": 564,
+   "completion_tokens": 48
+  },
+  {
+   "key": "extract:M10#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:18.529846+00:00",
+   "ms": 1354,
+   "prompt_tokens": 521,
+   "completion_tokens": 33
+  },
+  {
+   "key": "extract:M10#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:19.886074+00:00",
+   "ms": 1709,
+   "prompt_tokens": 549,
+   "completion_tokens": 50
+  },
+  {
+   "key": "extract:M11#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:21.596522+00:00",
+   "ms": 2416,
+   "prompt_tokens": 522,
+   "completion_tokens": 34
+  },
+  {
+   "key": "extract:M11#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:24.014455+00:00",
+   "ms": 1452,
+   "prompt_tokens": 553,
+   "completion_tokens": 38
+  },
+  {
+   "key": "extract:M12#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:25.468430+00:00",
+   "ms": 2299,
+   "prompt_tokens": 537,
+   "completion_tokens": 74
+  },
+  {
+   "key": "extract:M12#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:27.768895+00:00",
+   "ms": 1412,
+   "prompt_tokens": 588,
+   "completion_tokens": 36
+  },
+  {
+   "key": "extract:M13#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:29.182848+00:00",
+   "ms": 1738,
+   "prompt_tokens": 534,
+   "completion_tokens": 48
+  },
+  {
+   "key": "extract:M14#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:30.922704+00:00",
+   "ms": 1359,
+   "prompt_tokens": 522,
+   "completion_tokens": 32
+  },
+  {
+   "key": "extract:M14#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:32.283690+00:00",
+   "ms": 1432,
+   "prompt_tokens": 549,
+   "completion_tokens": 38
+  },
+  {
+   "key": "extract:M15#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:33.717831+00:00",
+   "ms": 1421,
+   "prompt_tokens": 531,
+   "completion_tokens": 5
+  },
+  {
+   "key": "extract:M16#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:35.140973+00:00",
+   "ms": 1959,
+   "prompt_tokens": 528,
+   "completion_tokens": 61
+  },
+  {
+   "key": "extract:M17#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:37.102329+00:00",
+   "ms": 1635,
+   "prompt_tokens": 521,
+   "completion_tokens": 33
+  },
+  {
+   "key": "extract:M17#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:38.739723+00:00",
+   "ms": 1587,
+   "prompt_tokens": 549,
+   "completion_tokens": 43
+  },
+  {
+   "key": "extract:M18#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:40.328285+00:00",
+   "ms": 2392,
+   "prompt_tokens": 522,
+   "completion_tokens": 32
+  },
+  {
+   "key": "extract:M19#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:42.722097+00:00",
+   "ms": 1909,
+   "prompt_tokens": 527,
+   "completion_tokens": 52
+  },
+  {
+   "key": "extract:M19#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:44.633379+00:00",
+   "ms": 2252,
+   "prompt_tokens": 558,
+   "completion_tokens": 43
+  },
+  {
+   "key": "extract:M20#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:46.887568+00:00",
+   "ms": 2013,
+   "prompt_tokens": 530,
+   "completion_tokens": 51
+  },
+  {
+   "key": "extract:M20#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:48.903261+00:00",
+   "ms": 3008,
+   "prompt_tokens": 561,
+   "completion_tokens": 44
+  },
+  {
+   "key": "extract:M21#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:51.913419+00:00",
+   "ms": 1982,
+   "prompt_tokens": 523,
+   "completion_tokens": 60
+  },
+  {
+   "key": "extract:M22#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:53.896950+00:00",
+   "ms": 1992,
+   "prompt_tokens": 525,
+   "completion_tokens": 61
+  },
+  {
+   "key": "extract:M23#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:55.890377+00:00",
+   "ms": 2181,
+   "prompt_tokens": 530,
+   "completion_tokens": 39
+  },
+  {
+   "key": "extract:M24#0",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:58.072776+00:00",
+   "ms": 1442,
+   "prompt_tokens": 523,
+   "completion_tokens": 34
+  },
+  {
+   "key": "extract:M24#1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:31:59.516902+00:00",
+   "ms": 1708,
+   "prompt_tokens": 552,
+   "completion_tokens": 49
+  },
+  {
+   "key": "emb:0c78a5367c37ebf9",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:01.227704+00:00"
+  },
+  {
+   "key": "emb:687ec7a302156a84",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:03.312539+00:00"
+  },
+  {
+   "key": "emb:4071c4de1345757b",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:04.131507+00:00"
+  },
+  {
+   "key": "emb:bcfa681b75f713be",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:04.858323+00:00"
+  },
+  {
+   "key": "emb:9b1a3e5f3f415b07",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:05.617528+00:00"
+  },
+  {
+   "key": "emb:a92b72380251ffb0",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:06.383954+00:00"
+  },
+  {
+   "key": "emb:d3ae3dd0e64cc7af",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:07.088096+00:00"
+  },
+  {
+   "key": "emb:9d14ead45eecde32",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:07.835771+00:00"
+  },
+  {
+   "key": "emb:8e1ed736b5b60c29",
+   "kind": "emb",
+   "texts": 10,
+   "status": "ok",
+   "at": "2026-10-24T11:32:08.651865+00:00"
+  },
+  {
+   "key": "emb:834399bd95c50c63",
+   "kind": "emb",
+   "texts": 9,
+   "status": "ok",
+   "at": "2026-10-24T11:32:09.432993+00:00"
+  },
+  {
+   "key": "route:llm:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:10.207810+00:00",
+   "ms": 784,
+   "prompt_tokens": 124,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:11.048580+00:00",
+   "ms": 914,
+   "prompt_tokens": 147,
+   "completion_tokens": 11
+  },
+  {
+   "key": "answers:none:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:12.018423+00:00",
+   "ms": 2347,
+   "prompt_tokens": 87,
+   "completion_tokens": 67
+  },
+  {
+   "key": "answers:naive:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:14.417064+00:00",
+   "ms": 3521,
+   "prompt_tokens": 154,
+   "completion_tokens": 132
+  },
+  {
+   "key": "answers:best:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:17.989352+00:00",
+   "ms": 4216,
+   "prompt_tokens": 113,
+   "completion_tokens": 139
+  },
+  {
+   "key": "answers:best_global:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:22.257469+00:00",
+   "ms": 4446,
+   "prompt_tokens": 113,
+   "completion_tokens": 139
+  },
+  {
+   "key": "judges:none:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:26.757447+00:00",
+   "ms": 1815,
+   "prompt_tokens": 400,
+   "completion_tokens": 54
+  },
+  {
+   "key": "judges:naive:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:28.626367+00:00",
+   "ms": 3704,
+   "prompt_tokens": 498,
+   "completion_tokens": 86
+  },
+  {
+   "key": "judges:best:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:32.385022+00:00",
+   "ms": 2909,
+   "prompt_tokens": 486,
+   "completion_tokens": 103
+  },
+  {
+   "key": "judges:best_global:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:35.348216+00:00",
+   "ms": 2722,
+   "prompt_tokens": 486,
+   "completion_tokens": 94
+  },
+  {
+   "key": "route:llm:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:38.122748+00:00",
+   "ms": 1327,
+   "prompt_tokens": 178,
+   "completion_tokens": 11
+  },
+  {
+   "key": "route:oracle:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:39.502135+00:00",
+   "ms": 896,
+   "prompt_tokens": 160,
+   "completion_tokens": 11
+  },
+  {
+   "key": "answers:none:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:40.449764+00:00",
+   "ms": 1793,
+   "prompt_tokens": 86,
+   "completion_tokens": 55
+  },
+  {
+   "key": "answers:naive:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:42.294937+00:00",
+   "ms": 2572,
+   "prompt_tokens": 153,
+   "completion_tokens": 79
+  },
+  {
+   "key": "answers:best:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:44.918164+00:00",
+   "ms": 2095,
+   "prompt_tokens": 167,
+   "completion_tokens": 65
+  },
+  {
+   "key": "answers:best_global:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:47.064807+00:00",
+   "ms": 2087,
+   "prompt_tokens": 167,
+   "completion_tokens": 60
+  },
+  {
+   "key": "judges:none:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:49.204910+00:00",
+   "ms": 3798,
+   "prompt_tokens": 372,
+   "completion_tokens": 99
+  },
+  {
+   "key": "judges:naive:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:53.058686+00:00",
+   "ms": 2291,
+   "prompt_tokens": 423,
+   "completion_tokens": 74
+  },
+  {
+   "key": "judges:best:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:55.402537+00:00",
+   "ms": 2792,
+   "prompt_tokens": 423,
+   "completion_tokens": 89
+  },
+  {
+   "key": "judges:best_global:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:32:58.246098+00:00",
+   "ms": 3404,
+   "prompt_tokens": 418,
+   "completion_tokens": 94
+  },
+  {
+   "key": "route:llm:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:01.703247+00:00",
+   "ms": 731,
+   "prompt_tokens": 179,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:02.486722+00:00",
+   "ms": 824,
+   "prompt_tokens": 161,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:03.363455+00:00",
+   "ms": 1591,
+   "prompt_tokens": 87,
+   "completion_tokens": 24
+  },
+  {
+   "key": "answers:naive:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:05.005659+00:00",
+   "ms": 1154,
+   "prompt_tokens": 154,
+   "completion_tokens": 22
+  },
+  {
+   "key": "answers:best:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:06.211838+00:00",
+   "ms": 1159,
+   "prompt_tokens": 87,
+   "completion_tokens": 24
+  },
+  {
+   "key": "answers:best_global:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:07.424749+00:00",
+   "ms": 1209,
+   "prompt_tokens": 168,
+   "completion_tokens": 22
+  },
+  {
+   "key": "judges:none:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:08.690467+00:00",
+   "ms": 1817,
+   "prompt_tokens": 331,
+   "completion_tokens": 54
+  },
+  {
+   "key": "judges:naive:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:10.597167+00:00",
+   "ms": 2161,
+   "prompt_tokens": 356,
+   "completion_tokens": 66
+  },
+  {
+   "key": "judges:best:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:12.823190+00:00",
+   "ms": 1682,
+   "prompt_tokens": 331,
+   "completion_tokens": 46
+  },
+  {
+   "key": "judges:best_global:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:14.560732+00:00",
+   "ms": 1861,
+   "prompt_tokens": 370,
+   "completion_tokens": 54
+  },
+  {
+   "key": "route:llm:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:16.475704+00:00",
+   "ms": 939,
+   "prompt_tokens": 158,
+   "completion_tokens": 11
+  },
+  {
+   "key": "route:oracle:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:17.467086+00:00",
+   "ms": 1055,
+   "prompt_tokens": 152,
+   "completion_tokens": 11
+  },
+  {
+   "key": "answers:none:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:18.574700+00:00",
+   "ms": 3092,
+   "prompt_tokens": 85,
+   "completion_tokens": 94
+  },
+  {
+   "key": "answers:naive:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:21.719441+00:00",
+   "ms": 2629,
+   "prompt_tokens": 173,
+   "completion_tokens": 84
+  },
+  {
+   "key": "answers:best:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:24.400833+00:00",
+   "ms": 3127,
+   "prompt_tokens": 147,
+   "completion_tokens": 95
+  },
+  {
+   "key": "answers:best_global:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:27.581233+00:00",
+   "ms": 2994,
+   "prompt_tokens": 147,
+   "completion_tokens": 95
+  },
+  {
+   "key": "judges:none:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:30.629032+00:00",
+   "ms": 3232,
+   "prompt_tokens": 445,
+   "completion_tokens": 109
+  },
+  {
+   "key": "judges:naive:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:33.914513+00:00",
+   "ms": 6391,
+   "prompt_tokens": 460,
+   "completion_tokens": 243
+  },
+  {
+   "key": "judges:best:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:40.359651+00:00",
+   "ms": 2892,
+   "prompt_tokens": 465,
+   "completion_tokens": 98
+  },
+  {
+   "key": "judges:best_global:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:43.304133+00:00",
+   "ms": 3127,
+   "prompt_tokens": 465,
+   "completion_tokens": 91
+  },
+  {
+   "key": "route:llm:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:46.486988+00:00",
+   "ms": 713,
+   "prompt_tokens": 162,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:47.260536+00:00",
+   "ms": 709,
+   "prompt_tokens": 156,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:48.024380+00:00",
+   "ms": 3110,
+   "prompt_tokens": 89,
+   "completion_tokens": 113
+  },
+  {
+   "key": "answers:naive:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:51.186932+00:00",
+   "ms": 2294,
+   "prompt_tokens": 177,
+   "completion_tokens": 75
+  },
+  {
+   "key": "answers:best:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:53.534712+00:00",
+   "ms": 3161,
+   "prompt_tokens": 89,
+   "completion_tokens": 113
+  },
+  {
+   "key": "answers:best_global:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:56.748649+00:00",
+   "ms": 2535,
+   "prompt_tokens": 151,
+   "completion_tokens": 79
+  },
+  {
+   "key": "judges:none:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:33:59.337162+00:00",
+   "ms": 2381,
+   "prompt_tokens": 436,
+   "completion_tokens": 77
+  },
+  {
+   "key": "judges:naive:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:01.772550+00:00",
+   "ms": 2099,
+   "prompt_tokens": 421,
+   "completion_tokens": 66
+  },
+  {
+   "key": "judges:best:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:03.925315+00:00",
+   "ms": 2400,
+   "prompt_tokens": 436,
+   "completion_tokens": 80
+  },
+  {
+   "key": "judges:best_global:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:06.379501+00:00",
+   "ms": 3239,
+   "prompt_tokens": 418,
+   "completion_tokens": 67
+  },
+  {
+   "key": "route:llm:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:09.673294+00:00",
+   "ms": 860,
+   "prompt_tokens": 157,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:10.586914+00:00",
+   "ms": 772,
+   "prompt_tokens": 157,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:11.411287+00:00",
+   "ms": 3910,
+   "prompt_tokens": 85,
+   "completion_tokens": 91
+  },
+  {
+   "key": "answers:naive:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:15.378332+00:00",
+   "ms": 3262,
+   "prompt_tokens": 132,
+   "completion_tokens": 92
+  },
+  {
+   "key": "answers:best:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:18.699257+00:00",
+   "ms": 3690,
+   "prompt_tokens": 120,
+   "completion_tokens": 98
+  },
+  {
+   "key": "answers:best_global:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:22.446129+00:00",
+   "ms": 2096,
+   "prompt_tokens": 146,
+   "completion_tokens": 51
+  },
+  {
+   "key": "judges:none:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:24.600755+00:00",
+   "ms": 2210,
+   "prompt_tokens": 399,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:naive:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:26.869997+00:00",
+   "ms": 2539,
+   "prompt_tokens": 408,
+   "completion_tokens": 82
+  },
+  {
+   "key": "judges:best:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:29.465640+00:00",
+   "ms": 2857,
+   "prompt_tokens": 429,
+   "completion_tokens": 67
+  },
+  {
+   "key": "judges:best_global:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:32.381843+00:00",
+   "ms": 3314,
+   "prompt_tokens": 381,
+   "completion_tokens": 91
+  },
+  {
+   "key": "route:llm:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:35.753229+00:00",
+   "ms": 790,
+   "prompt_tokens": 119,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:36.604466+00:00",
+   "ms": 777,
+   "prompt_tokens": 118,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:37.437701+00:00",
+   "ms": 2951,
+   "prompt_tokens": 85,
+   "completion_tokens": 84
+  },
+  {
+   "key": "answers:naive:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:40.444444+00:00",
+   "ms": 3717,
+   "prompt_tokens": 132,
+   "completion_tokens": 105
+  },
+  {
+   "key": "answers:best:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:44.218711+00:00",
+   "ms": 3657,
+   "prompt_tokens": 108,
+   "completion_tokens": 120
+  },
+  {
+   "key": "answers:best_global:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:47.931508+00:00",
+   "ms": 3531,
+   "prompt_tokens": 108,
+   "completion_tokens": 120
+  },
+  {
+   "key": "judges:none:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:51.518627+00:00",
+   "ms": 1537,
+   "prompt_tokens": 409,
+   "completion_tokens": 40
+  },
+  {
+   "key": "judges:naive:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:53.113373+00:00",
+   "ms": 2689,
+   "prompt_tokens": 447,
+   "completion_tokens": 97
+  },
+  {
+   "key": "judges:best:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:55.859068+00:00",
+   "ms": 2633,
+   "prompt_tokens": 456,
+   "completion_tokens": 90
+  },
+  {
+   "key": "judges:best_global:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:34:58.549261+00:00",
+   "ms": 2281,
+   "prompt_tokens": 456,
+   "completion_tokens": 76
+  },
+  {
+   "key": "answers:none:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:00.885739+00:00",
+   "ms": 1267,
+   "prompt_tokens": 85,
+   "completion_tokens": 28
+  },
+  {
+   "key": "answers:naive:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:02.208352+00:00",
+   "ms": 788,
+   "prompt_tokens": 109,
+   "completion_tokens": 10
+  },
+  {
+   "key": "answers:best:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:03.053448+00:00",
+   "ms": 1422,
+   "prompt_tokens": 85,
+   "completion_tokens": 28
+  },
+  {
+   "key": "answers:best_global:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:04.533812+00:00",
+   "ms": 2531,
+   "prompt_tokens": 85,
+   "completion_tokens": 28
+  },
+  {
+   "key": "judges:none:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:07.120023+00:00",
+   "ms": 2221,
+   "prompt_tokens": 368,
+   "completion_tokens": 57
+  },
+  {
+   "key": "judges:naive:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:09.397272+00:00",
+   "ms": 1875,
+   "prompt_tokens": 354,
+   "completion_tokens": 52
+  },
+  {
+   "key": "judges:best:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:11.331104+00:00",
+   "ms": 1918,
+   "prompt_tokens": 368,
+   "completion_tokens": 58
+  },
+  {
+   "key": "judges:best_global:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:13.305951+00:00",
+   "ms": 1972,
+   "prompt_tokens": 368,
+   "completion_tokens": 57
+  },
+  {
+   "key": "answers:none:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:15.338177+00:00",
+   "ms": 4135,
+   "prompt_tokens": 86,
+   "completion_tokens": 123
+  },
+  {
+   "key": "answers:naive:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:19.532904+00:00",
+   "ms": 3712,
+   "prompt_tokens": 110,
+   "completion_tokens": 139
+  },
+  {
+   "key": "answers:best:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:23.301910+00:00",
+   "ms": 3913,
+   "prompt_tokens": 86,
+   "completion_tokens": 123
+  },
+  {
+   "key": "answers:best_global:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:27.270091+00:00",
+   "ms": 4238,
+   "prompt_tokens": 86,
+   "completion_tokens": 123
+  },
+  {
+   "key": "judges:none:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:31.563773+00:00",
+   "ms": 2781,
+   "prompt_tokens": 447,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:naive:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:34.401141+00:00",
+   "ms": 2184,
+   "prompt_tokens": 477,
+   "completion_tokens": 69
+  },
+  {
+   "key": "judges:best:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:36.645815+00:00",
+   "ms": 2580,
+   "prompt_tokens": 447,
+   "completion_tokens": 81
+  },
+  {
+   "key": "judges:best_global:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:39.296573+00:00",
+   "ms": 2205,
+   "prompt_tokens": 447,
+   "completion_tokens": 72
+  },
+  {
+   "key": "answers:none:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:41.559287+00:00",
+   "ms": 2005,
+   "prompt_tokens": 84,
+   "completion_tokens": 54
+  },
+  {
+   "key": "answers:naive:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:43.622269+00:00",
+   "ms": 1852,
+   "prompt_tokens": 84,
+   "completion_tokens": 54
+  },
+  {
+   "key": "answers:best:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:45.531702+00:00",
+   "ms": 2749,
+   "prompt_tokens": 84,
+   "completion_tokens": 54
+  },
+  {
+   "key": "answers:best_global:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:48.337498+00:00",
+   "ms": 1839,
+   "prompt_tokens": 84,
+   "completion_tokens": 54
+  },
+  {
+   "key": "judges:none:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:50.234204+00:00",
+   "ms": 3066,
+   "prompt_tokens": 390,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:naive:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:53.356152+00:00",
+   "ms": 1946,
+   "prompt_tokens": 390,
+   "completion_tokens": 61
+  },
+  {
+   "key": "judges:best:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:55.358990+00:00",
+   "ms": 1990,
+   "prompt_tokens": 390,
+   "completion_tokens": 61
+  },
+  {
+   "key": "judges:best_global:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:35:57.405789+00:00",
+   "ms": 2710,
+   "prompt_tokens": 390,
+   "completion_tokens": 62
+  },
+  {
+   "key": "route:llm:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:00.173693+00:00",
+   "ms": 718,
+   "prompt_tokens": 117,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:00.952077+00:00",
+   "ms": 828,
+   "prompt_tokens": 122,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:01.836726+00:00",
+   "ms": 5123,
+   "prompt_tokens": 83,
+   "completion_tokens": 144
+  },
+  {
+   "key": "answers:naive:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:07.019181+00:00",
+   "ms": 3313,
+   "prompt_tokens": 106,
+   "completion_tokens": 107
+  },
+  {
+   "key": "answers:best:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:10.388561+00:00",
+   "ms": 3294,
+   "prompt_tokens": 106,
+   "completion_tokens": 107
+  },
+  {
+   "key": "answers:best_global:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:13.738487+00:00",
+   "ms": 4454,
+   "prompt_tokens": 106,
+   "completion_tokens": 145
+  },
+  {
+   "key": "judges:none:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:18.249838+00:00",
+   "ms": 2174,
+   "prompt_tokens": 480,
+   "completion_tokens": 69
+  },
+  {
+   "key": "judges:naive:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:20.482202+00:00",
+   "ms": 2172,
+   "prompt_tokens": 442,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:best:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:22.711960+00:00",
+   "ms": 2168,
+   "prompt_tokens": 442,
+   "completion_tokens": 64
+  },
+  {
+   "key": "judges:best_global:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:24.937532+00:00",
+   "ms": 3166,
+   "prompt_tokens": 480,
+   "completion_tokens": 63
+  },
+  {
+   "key": "route:llm:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:28.162331+00:00",
+   "ms": 701,
+   "prompt_tokens": 120,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:28.921978+00:00",
+   "ms": 1580,
+   "prompt_tokens": 125,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:30.559317+00:00",
+   "ms": 3984,
+   "prompt_tokens": 86,
+   "completion_tokens": 131
+  },
+  {
+   "key": "answers:naive:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:34.598909+00:00",
+   "ms": 3550,
+   "prompt_tokens": 109,
+   "completion_tokens": 131
+  },
+  {
+   "key": "answers:best:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:38.203113+00:00",
+   "ms": 4016,
+   "prompt_tokens": 86,
+   "completion_tokens": 131
+  },
+  {
+   "key": "answers:best_global:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:42.274750+00:00",
+   "ms": 4521,
+   "prompt_tokens": 109,
+   "completion_tokens": 129
+  },
+  {
+   "key": "judges:none:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:46.853356+00:00",
+   "ms": 1822,
+   "prompt_tokens": 466,
+   "completion_tokens": 55
+  },
+  {
+   "key": "judges:naive:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:48.732321+00:00",
+   "ms": 2906,
+   "prompt_tokens": 467,
+   "completion_tokens": 74
+  },
+  {
+   "key": "judges:best:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:51.694708+00:00",
+   "ms": 3095,
+   "prompt_tokens": 466,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:best_global:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:54.845829+00:00",
+   "ms": 2324,
+   "prompt_tokens": 465,
+   "completion_tokens": 74
+  },
+  {
+   "key": "route:llm:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:57.227940+00:00",
+   "ms": 891,
+   "prompt_tokens": 140,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:58.176328+00:00",
+   "ms": 894,
+   "prompt_tokens": 132,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:36:59.128574+00:00",
+   "ms": 2948,
+   "prompt_tokens": 91,
+   "completion_tokens": 86
+  },
+  {
+   "key": "answers:naive:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:02.134098+00:00",
+   "ms": 2279,
+   "prompt_tokens": 129,
+   "completion_tokens": 75
+  },
+  {
+   "key": "answers:best:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:04.469651+00:00",
+   "ms": 2295,
+   "prompt_tokens": 129,
+   "completion_tokens": 77
+  },
+  {
+   "key": "answers:best_global:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:06.819761+00:00",
+   "ms": 3106,
+   "prompt_tokens": 129,
+   "completion_tokens": 89
+  },
+  {
+   "key": "judges:none:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:09.983308+00:00",
+   "ms": 3286,
+   "prompt_tokens": 416,
+   "completion_tokens": 82
+  },
+  {
+   "key": "judges:naive:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:13.327273+00:00",
+   "ms": 3077,
+   "prompt_tokens": 422,
+   "completion_tokens": 111
+  },
+  {
+   "key": "judges:best:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:16.460189+00:00",
+   "ms": 3084,
+   "prompt_tokens": 426,
+   "completion_tokens": 111
+  },
+  {
+   "key": "judges:best_global:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:19.600364+00:00",
+   "ms": 3149,
+   "prompt_tokens": 439,
+   "completion_tokens": 111
+  },
+  {
+   "key": "route:llm:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:22.806333+00:00",
+   "ms": 1047,
+   "prompt_tokens": 136,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:23.911063+00:00",
+   "ms": 1476,
+   "prompt_tokens": 128,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:25.442470+00:00",
+   "ms": 924,
+   "prompt_tokens": 87,
+   "completion_tokens": 12
+  },
+  {
+   "key": "answers:naive:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:26.423309+00:00",
+   "ms": 1497,
+   "prompt_tokens": 125,
+   "completion_tokens": 13
+  },
+  {
+   "key": "answers:best:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:27.977172+00:00",
+   "ms": 878,
+   "prompt_tokens": 87,
+   "completion_tokens": 12
+  },
+  {
+   "key": "answers:best_global:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:28.912953+00:00",
+   "ms": 2482,
+   "prompt_tokens": 125,
+   "completion_tokens": 46
+  },
+  {
+   "key": "judges:none:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:31.452319+00:00",
+   "ms": 1974,
+   "prompt_tokens": 319,
+   "completion_tokens": 59
+  },
+  {
+   "key": "judges:naive:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:33.483407+00:00",
+   "ms": 2382,
+   "prompt_tokens": 338,
+   "completion_tokens": 48
+  },
+  {
+   "key": "judges:best:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:35.922689+00:00",
+   "ms": 1650,
+   "prompt_tokens": 319,
+   "completion_tokens": 47
+  },
+  {
+   "key": "judges:best_global:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:37.628490+00:00",
+   "ms": 1949,
+   "prompt_tokens": 373,
+   "completion_tokens": 53
+  },
+  {
+   "key": "route:llm:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:39.633406+00:00",
+   "ms": 787,
+   "prompt_tokens": 175,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:40.478133+00:00",
+   "ms": 1375,
+   "prompt_tokens": 182,
+   "completion_tokens": 15
+  },
+  {
+   "key": "answers:none:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:41.910957+00:00",
+   "ms": 4334,
+   "prompt_tokens": 84,
+   "completion_tokens": 168
+  },
+  {
+   "key": "answers:naive:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:46.303295+00:00",
+   "ms": 4285,
+   "prompt_tokens": 267,
+   "completion_tokens": 166
+  },
+  {
+   "key": "answers:best:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:50.647028+00:00",
+   "ms": 4412,
+   "prompt_tokens": 164,
+   "completion_tokens": 172
+  },
+  {
+   "key": "answers:best_global:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:37:55.115915+00:00",
+   "ms": 5522,
+   "prompt_tokens": 164,
+   "completion_tokens": 172
+  },
+  {
+   "key": "judges:none:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:00.694643+00:00",
+   "ms": 1919,
+   "prompt_tokens": 541,
+   "completion_tokens": 58
+  },
+  {
+   "key": "judges:naive:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:02.671412+00:00",
+   "ms": 3372,
+   "prompt_tokens": 656,
+   "completion_tokens": 93
+  },
+  {
+   "key": "judges:best:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:06.101920+00:00",
+   "ms": 2922,
+   "prompt_tokens": 599,
+   "completion_tokens": 101
+  },
+  {
+   "key": "judges:best_global:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:09.081808+00:00",
+   "ms": 2805,
+   "prompt_tokens": 599,
+   "completion_tokens": 93
+  },
+  {
+   "key": "route:llm:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:11.944042+00:00",
+   "ms": 760,
+   "prompt_tokens": 173,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:12.760687+00:00",
+   "ms": 746,
+   "prompt_tokens": 155,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:13.562858+00:00",
+   "ms": 3011,
+   "prompt_tokens": 85,
+   "completion_tokens": 53
+  },
+  {
+   "key": "answers:naive:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:16.631260+00:00",
+   "ms": 3920,
+   "prompt_tokens": 162,
+   "completion_tokens": 126
+  },
+  {
+   "key": "answers:best:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:20.608486+00:00",
+   "ms": 2660,
+   "prompt_tokens": 121,
+   "completion_tokens": 79
+  },
+  {
+   "key": "answers:best_global:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:23.323963+00:00",
+   "ms": 3029,
+   "prompt_tokens": 162,
+   "completion_tokens": 80
+  },
+  {
+   "key": "judges:none:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:26.411705+00:00",
+   "ms": 3395,
+   "prompt_tokens": 371,
+   "completion_tokens": 54
+  },
+  {
+   "key": "judges:naive:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:29.863345+00:00",
+   "ms": 3143,
+   "prompt_tokens": 488,
+   "completion_tokens": 80
+  },
+  {
+   "key": "judges:best:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:33.063985+00:00",
+   "ms": 2327,
+   "prompt_tokens": 411,
+   "completion_tokens": 76
+  },
+  {
+   "key": "judges:best_global:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:35.446557+00:00",
+   "ms": 2281,
+   "prompt_tokens": 434,
+   "completion_tokens": 67
+  },
+  {
+   "key": "route:llm:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:37.783541+00:00",
+   "ms": 817,
+   "prompt_tokens": 179,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:38.656748+00:00",
+   "ms": 2013,
+   "prompt_tokens": 161,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:40.724871+00:00",
+   "ms": 3277,
+   "prompt_tokens": 91,
+   "completion_tokens": 94
+  },
+  {
+   "key": "answers:naive:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:44.058550+00:00",
+   "ms": 4072,
+   "prompt_tokens": 168,
+   "completion_tokens": 125
+  },
+  {
+   "key": "answers:best:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:48.186977+00:00",
+   "ms": 3814,
+   "prompt_tokens": 129,
+   "completion_tokens": 110
+  },
+  {
+   "key": "answers:best_global:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:52.056483+00:00",
+   "ms": 3754,
+   "prompt_tokens": 168,
+   "completion_tokens": 125
+  },
+  {
+   "key": "judges:none:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:55.868287+00:00",
+   "ms": 1776,
+   "prompt_tokens": 414,
+   "completion_tokens": 52
+  },
+  {
+   "key": "judges:naive:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:38:57.700457+00:00",
+   "ms": 2443,
+   "prompt_tokens": 481,
+   "completion_tokens": 79
+  },
+  {
+   "key": "judges:best:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:00.199836+00:00",
+   "ms": 2583,
+   "prompt_tokens": 447,
+   "completion_tokens": 79
+  },
+  {
+   "key": "judges:best_global:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:02.840759+00:00",
+   "ms": 2317,
+   "prompt_tokens": 481,
+   "completion_tokens": 78
+  },
+  {
+   "key": "route:llm:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:05.214642+00:00",
+   "ms": 828,
+   "prompt_tokens": 160,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:06.099967+00:00",
+   "ms": 882,
+   "prompt_tokens": 168,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:07.038466+00:00",
+   "ms": 1731,
+   "prompt_tokens": 88,
+   "completion_tokens": 48
+  },
+  {
+   "key": "answers:naive:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:08.826655+00:00",
+   "ms": 1646,
+   "prompt_tokens": 135,
+   "completion_tokens": 45
+  },
+  {
+   "key": "answers:best:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:10.529754+00:00",
+   "ms": 1922,
+   "prompt_tokens": 123,
+   "completion_tokens": 46
+  },
+  {
+   "key": "answers:best_global:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:12.508117+00:00",
+   "ms": 1991,
+   "prompt_tokens": 149,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:none:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:14.556332+00:00",
+   "ms": 2078,
+   "prompt_tokens": 372,
+   "completion_tokens": 61
+  },
+  {
+   "key": "judges:naive:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:16.690087+00:00",
+   "ms": 2494,
+   "prompt_tokens": 375,
+   "completion_tokens": 88
+  },
+  {
+   "key": "judges:best:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:19.241040+00:00",
+   "ms": 3087,
+   "prompt_tokens": 383,
+   "completion_tokens": 109
+  },
+  {
+   "key": "judges:best_global:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:22.385517+00:00",
+   "ms": 2589,
+   "prompt_tokens": 405,
+   "completion_tokens": 89
+  },
+  {
+   "key": "route:llm:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:25.032633+00:00",
+   "ms": 805,
+   "prompt_tokens": 122,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:25.895099+00:00",
+   "ms": 865,
+   "prompt_tokens": 122,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:26.817282+00:00",
+   "ms": 1693,
+   "prompt_tokens": 88,
+   "completion_tokens": 48
+  },
+  {
+   "key": "answers:naive:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:28.568056+00:00",
+   "ms": 1800,
+   "prompt_tokens": 135,
+   "completion_tokens": 47
+  },
+  {
+   "key": "answers:best:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:30.425461+00:00",
+   "ms": 1649,
+   "prompt_tokens": 111,
+   "completion_tokens": 48
+  },
+  {
+   "key": "answers:best_global:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:32.132039+00:00",
+   "ms": 2190,
+   "prompt_tokens": 111,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:none:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:34.380090+00:00",
+   "ms": 1655,
+   "prompt_tokens": 384,
+   "completion_tokens": 47
+  },
+  {
+   "key": "judges:naive:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:36.093143+00:00",
+   "ms": 2204,
+   "prompt_tokens": 391,
+   "completion_tokens": 69
+  },
+  {
+   "key": "judges:best:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:38.354923+00:00",
+   "ms": 3330,
+   "prompt_tokens": 388,
+   "completion_tokens": 74
+  },
+  {
+   "key": "judges:best_global:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:41.740501+00:00",
+   "ms": 2553,
+   "prompt_tokens": 401,
+   "completion_tokens": 82
+  },
+  {
+   "key": "route:llm:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:44.349422+00:00",
+   "ms": 784,
+   "prompt_tokens": 123,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:45.190116+00:00",
+   "ms": 1542,
+   "prompt_tokens": 127,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:46.787427+00:00",
+   "ms": 3545,
+   "prompt_tokens": 89,
+   "completion_tokens": 92
+  },
+  {
+   "key": "answers:naive:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:50.388814+00:00",
+   "ms": 2589,
+   "prompt_tokens": 140,
+   "completion_tokens": 79
+  },
+  {
+   "key": "answers:best:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:53.032866+00:00",
+   "ms": 2321,
+   "prompt_tokens": 112,
+   "completion_tokens": 71
+  },
+  {
+   "key": "answers:best_global:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:55.411052+00:00",
+   "ms": 2344,
+   "prompt_tokens": 112,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:none:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:57.812509+00:00",
+   "ms": 1828,
+   "prompt_tokens": 426,
+   "completion_tokens": 54
+  },
+  {
+   "key": "judges:naive:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:39:59.697355+00:00",
+   "ms": 2092,
+   "prompt_tokens": 422,
+   "completion_tokens": 66
+  },
+  {
+   "key": "judges:best:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:01.846310+00:00",
+   "ms": 2155,
+   "prompt_tokens": 406,
+   "completion_tokens": 66
+  },
+  {
+   "key": "judges:best_global:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:04.059347+00:00",
+   "ms": 3187,
+   "prompt_tokens": 406,
+   "completion_tokens": 70
+  },
+  {
+   "key": "route:llm:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:07.303610+00:00",
+   "ms": 777,
+   "prompt_tokens": 188,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:08.137663+00:00",
+   "ms": 1518,
+   "prompt_tokens": 177,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:09.712967+00:00",
+   "ms": 3611,
+   "prompt_tokens": 85,
+   "completion_tokens": 89
+  },
+  {
+   "key": "answers:naive:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:13.381599+00:00",
+   "ms": 2994,
+   "prompt_tokens": 177,
+   "completion_tokens": 91
+  },
+  {
+   "key": "answers:best:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:16.433013+00:00",
+   "ms": 2233,
+   "prompt_tokens": 115,
+   "completion_tokens": 49
+  },
+  {
+   "key": "answers:best_global:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:18.722901+00:00",
+   "ms": 2913,
+   "prompt_tokens": 177,
+   "completion_tokens": 91
+  },
+  {
+   "key": "judges:none:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:21.694728+00:00",
+   "ms": 2213,
+   "prompt_tokens": 399,
+   "completion_tokens": 70
+  },
+  {
+   "key": "judges:naive:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:23.965262+00:00",
+   "ms": 2301,
+   "prompt_tokens": 434,
+   "completion_tokens": 65
+  },
+  {
+   "key": "judges:best:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:26.323062+00:00",
+   "ms": 2011,
+   "prompt_tokens": 368,
+   "completion_tokens": 59
+  },
+  {
+   "key": "judges:best_global:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:28.391756+00:00",
+   "ms": 2980,
+   "prompt_tokens": 434,
+   "completion_tokens": 62
+  },
+  {
+   "key": "route:llm:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:31.430352+00:00",
+   "ms": 1481,
+   "prompt_tokens": 188,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:32.967583+00:00",
+   "ms": 1460,
+   "prompt_tokens": 177,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:34.485743+00:00",
+   "ms": 5157,
+   "prompt_tokens": 85,
+   "completion_tokens": 132
+  },
+  {
+   "key": "answers:naive:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:39.701311+00:00",
+   "ms": 3951,
+   "prompt_tokens": 177,
+   "completion_tokens": 123
+  },
+  {
+   "key": "answers:best:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:43.710750+00:00",
+   "ms": 3118,
+   "prompt_tokens": 115,
+   "completion_tokens": 111
+  },
+  {
+   "key": "answers:best_global:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:46.885448+00:00",
+   "ms": 4297,
+   "prompt_tokens": 177,
+   "completion_tokens": 131
+  },
+  {
+   "key": "judges:none:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:51.241393+00:00",
+   "ms": 1794,
+   "prompt_tokens": 442,
+   "completion_tokens": 51
+  },
+  {
+   "key": "judges:naive:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:53.093926+00:00",
+   "ms": 2703,
+   "prompt_tokens": 465,
+   "completion_tokens": 94
+  },
+  {
+   "key": "judges:best:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:55.852639+00:00",
+   "ms": 2679,
+   "prompt_tokens": 430,
+   "completion_tokens": 75
+  },
+  {
+   "key": "judges:best_global:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:40:58.588033+00:00",
+   "ms": 3408,
+   "prompt_tokens": 473,
+   "completion_tokens": 92
+  },
+  {
+   "key": "route:llm:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:02.054231+00:00",
+   "ms": 786,
+   "prompt_tokens": 191,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:02.897869+00:00",
+   "ms": 864,
+   "prompt_tokens": 180,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:03.819156+00:00",
+   "ms": 4888,
+   "prompt_tokens": 88,
+   "completion_tokens": 170
+  },
+  {
+   "key": "answers:naive:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:08.764268+00:00",
+   "ms": 3690,
+   "prompt_tokens": 180,
+   "completion_tokens": 124
+  },
+  {
+   "key": "answers:best:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:12.513322+00:00",
+   "ms": 5034,
+   "prompt_tokens": 114,
+   "completion_tokens": 147
+  },
+  {
+   "key": "answers:best_global:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:17.605533+00:00",
+   "ms": 4031,
+   "prompt_tokens": 180,
+   "completion_tokens": 124
+  },
+  {
+   "key": "judges:none:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:21.693808+00:00",
+   "ms": 3898,
+   "prompt_tokens": 491,
+   "completion_tokens": 98
+  },
+  {
+   "key": "judges:naive:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:25.650395+00:00",
+   "ms": 2624,
+   "prompt_tokens": 479,
+   "completion_tokens": 88
+  },
+  {
+   "key": "judges:best:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:28.332217+00:00",
+   "ms": 2239,
+   "prompt_tokens": 475,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:best_global:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:30.627779+00:00",
+   "ms": 3124,
+   "prompt_tokens": 479,
+   "completion_tokens": 78
+  },
+  {
+   "key": "route:llm:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:33.810635+00:00",
+   "ms": 833,
+   "prompt_tokens": 148,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:34.699448+00:00",
+   "ms": 2342,
+   "prompt_tokens": 146,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:37.099745+00:00",
+   "ms": 4377,
+   "prompt_tokens": 100,
+   "completion_tokens": 125
+  },
+  {
+   "key": "answers:naive:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:41.535402+00:00",
+   "ms": 2528,
+   "prompt_tokens": 137,
+   "completion_tokens": 68
+  },
+  {
+   "key": "answers:best:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:44.120744+00:00",
+   "ms": 2113,
+   "prompt_tokens": 137,
+   "completion_tokens": 68
+  },
+  {
+   "key": "answers:best_global:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:46.292362+00:00",
+   "ms": 2333,
+   "prompt_tokens": 137,
+   "completion_tokens": 68
+  },
+  {
+   "key": "judges:none:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:48.682131+00:00",
+   "ms": 2505,
+   "prompt_tokens": 469,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:naive:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:51.244759+00:00",
+   "ms": 2842,
+   "prompt_tokens": 427,
+   "completion_tokens": 95
+  },
+  {
+   "key": "judges:best:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:54.144254+00:00",
+   "ms": 2889,
+   "prompt_tokens": 427,
+   "completion_tokens": 102
+  },
+  {
+   "key": "judges:best_global:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:41:57.091122+00:00",
+   "ms": 3062,
+   "prompt_tokens": 427,
+   "completion_tokens": 77
+  },
+  {
+   "key": "route:llm:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:00.211205+00:00",
+   "ms": 790,
+   "prompt_tokens": 119,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:01.058756+00:00",
+   "ms": 774,
+   "prompt_tokens": 120,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:01.890417+00:00",
+   "ms": 3028,
+   "prompt_tokens": 87,
+   "completion_tokens": 92
+  },
+  {
+   "key": "answers:naive:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:04.977107+00:00",
+   "ms": 3067,
+   "prompt_tokens": 132,
+   "completion_tokens": 89
+  },
+  {
+   "key": "answers:best:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:08.102345+00:00",
+   "ms": 4776,
+   "prompt_tokens": 108,
+   "completion_tokens": 155
+  },
+  {
+   "key": "answers:best_global:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:12.936035+00:00",
+   "ms": 5254,
+   "prompt_tokens": 108,
+   "completion_tokens": 152
+  },
+  {
+   "key": "judges:none:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:18.247940+00:00",
+   "ms": 2614,
+   "prompt_tokens": 410,
+   "completion_tokens": 59
+  },
+  {
+   "key": "judges:naive:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:20.920246+00:00",
+   "ms": 2207,
+   "prompt_tokens": 420,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:best:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:23.186358+00:00",
+   "ms": 2313,
+   "prompt_tokens": 486,
+   "completion_tokens": 76
+  },
+  {
+   "key": "judges:best_global:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:25.556610+00:00",
+   "ms": 2401,
+   "prompt_tokens": 483,
+   "completion_tokens": 76
+  },
+  {
+   "key": "answers:none:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:28.016109+00:00",
+   "ms": 1696,
+   "prompt_tokens": 85,
+   "completion_tokens": 46
+  },
+  {
+   "key": "answers:naive:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:29.770276+00:00",
+   "ms": 1659,
+   "prompt_tokens": 85,
+   "completion_tokens": 46
+  },
+  {
+   "key": "answers:best:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:31.488073+00:00",
+   "ms": 1783,
+   "prompt_tokens": 85,
+   "completion_tokens": 46
+  },
+  {
+   "key": "answers:best_global:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:33.328089+00:00",
+   "ms": 2098,
+   "prompt_tokens": 85,
+   "completion_tokens": 50
+  },
+  {
+   "key": "judges:none:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:35.483846+00:00",
+   "ms": 2012,
+   "prompt_tokens": 369,
+   "completion_tokens": 57
+  },
+  {
+   "key": "judges:naive:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:37.552865+00:00",
+   "ms": 2928,
+   "prompt_tokens": 369,
+   "completion_tokens": 56
+  },
+  {
+   "key": "judges:best:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:40.538849+00:00",
+   "ms": 1998,
+   "prompt_tokens": 369,
+   "completion_tokens": 60
+  },
+  {
+   "key": "judges:best_global:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:42.595119+00:00",
+   "ms": 2648,
+   "prompt_tokens": 373,
+   "completion_tokens": 56
+  },
+  {
+   "key": "route:llm:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:45.301836+00:00",
+   "ms": 895,
+   "prompt_tokens": 152,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "started",
+   "at": "2026-10-24T11:42:46.253753+00:00"
+  },
+  {
+   "key": "answers:none:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:46.309758+00:00",
+   "ms": 2466,
+   "prompt_tokens": 86,
+   "completion_tokens": 83
+  },
+  {
+   "key": "answers:naive:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:48.835313+00:00",
+   "ms": 4235,
+   "prompt_tokens": 127,
+   "completion_tokens": 154
+  },
+  {
+   "key": "answers:best:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:53.126708+00:00",
+   "ms": 5380,
+   "prompt_tokens": 141,
+   "completion_tokens": 163
+  },
+  {
+   "key": "answers:best_global:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:42:58.564885+00:00",
+   "ms": 4839,
+   "prompt_tokens": 141,
+   "completion_tokens": 177
+  },
+  {
+   "key": "judges:none:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:03.461554+00:00",
+   "ms": 2090,
+   "prompt_tokens": 405,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:naive:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:05.608624+00:00",
+   "ms": 2548,
+   "prompt_tokens": 513,
+   "completion_tokens": 85
+  },
+  {
+   "key": "judges:best:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:08.215132+00:00",
+   "ms": 2732,
+   "prompt_tokens": 536,
+   "completion_tokens": 86
+  },
+  {
+   "key": "judges:best_global:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:11.005346+00:00",
+   "ms": 2488,
+   "prompt_tokens": 550,
+   "completion_tokens": 84
+  },
+  {
+   "key": "answers:none:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:13.553138+00:00",
+   "ms": 2269,
+   "prompt_tokens": 87,
+   "completion_tokens": 43
+  },
+  {
+   "key": "answers:naive:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:15.881113+00:00",
+   "ms": 2639,
+   "prompt_tokens": 128,
+   "completion_tokens": 85
+  },
+  {
+   "key": "answers:best:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:18.576862+00:00",
+   "ms": 2503,
+   "prompt_tokens": 87,
+   "completion_tokens": 43
+  },
+  {
+   "key": "answers:best_global:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:21.139662+00:00",
+   "ms": 1555,
+   "prompt_tokens": 87,
+   "completion_tokens": 43
+  },
+  {
+   "key": "judges:none:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:22.751443+00:00",
+   "ms": 2086,
+   "prompt_tokens": 382,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:naive:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:24.895347+00:00",
+   "ms": 2116,
+   "prompt_tokens": 445,
+   "completion_tokens": 64
+  },
+  {
+   "key": "judges:best:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:27.069864+00:00",
+   "ms": 1975,
+   "prompt_tokens": 382,
+   "completion_tokens": 62
+  },
+  {
+   "key": "judges:best_global:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:29.103445+00:00",
+   "ms": 2026,
+   "prompt_tokens": 382,
+   "completion_tokens": 63
+  },
+  {
+   "key": "route:llm:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:31.187326+00:00",
+   "ms": 785,
+   "prompt_tokens": 121,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:32.029902+00:00",
+   "ms": 792,
+   "prompt_tokens": 120,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:32.880830+00:00",
+   "ms": 5390,
+   "prompt_tokens": 82,
+   "completion_tokens": 137
+  },
+  {
+   "key": "answers:naive:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:38.329458+00:00",
+   "ms": 3505,
+   "prompt_tokens": 137,
+   "completion_tokens": 124
+  },
+  {
+   "key": "answers:best:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:41.892599+00:00",
+   "ms": 5039,
+   "prompt_tokens": 110,
+   "completion_tokens": 130
+  },
+  {
+   "key": "answers:best_global:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:46.989121+00:00",
+   "ms": 3614,
+   "prompt_tokens": 110,
+   "completion_tokens": 130
+  },
+  {
+   "key": "judges:none:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:50.660487+00:00",
+   "ms": 1875,
+   "prompt_tokens": 476,
+   "completion_tokens": 55
+  },
+  {
+   "key": "judges:naive:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:52.593565+00:00",
+   "ms": 2343,
+   "prompt_tokens": 474,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:best:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:54.994775+00:00",
+   "ms": 2807,
+   "prompt_tokens": 473,
+   "completion_tokens": 98
+  },
+  {
+   "key": "judges:best_global:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:43:57.859533+00:00",
+   "ms": 2447,
+   "prompt_tokens": 473,
+   "completion_tokens": 83
+  },
+  {
+   "key": "route:llm:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:00.364217+00:00",
+   "ms": 811,
+   "prompt_tokens": 120,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:01.233037+00:00",
+   "ms": 1557,
+   "prompt_tokens": 120,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:02.848035+00:00",
+   "ms": 3314,
+   "prompt_tokens": 87,
+   "completion_tokens": 117
+  },
+  {
+   "key": "answers:naive:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:06.219369+00:00",
+   "ms": 3306,
+   "prompt_tokens": 109,
+   "completion_tokens": 120
+  },
+  {
+   "key": "answers:best:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:09.587563+00:00",
+   "ms": 3262,
+   "prompt_tokens": 109,
+   "completion_tokens": 120
+  },
+  {
+   "key": "answers:best_global:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:12.908732+00:00",
+   "ms": 3651,
+   "prompt_tokens": 109,
+   "completion_tokens": 120
+  },
+  {
+   "key": "judges:none:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:16.617152+00:00",
+   "ms": 1747,
+   "prompt_tokens": 427,
+   "completion_tokens": 53
+  },
+  {
+   "key": "judges:naive:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:18.420164+00:00",
+   "ms": 2261,
+   "prompt_tokens": 441,
+   "completion_tokens": 73
+  },
+  {
+   "key": "judges:best:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:20.740500+00:00",
+   "ms": 2231,
+   "prompt_tokens": 441,
+   "completion_tokens": 73
+  },
+  {
+   "key": "judges:best_global:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:23.029911+00:00",
+   "ms": 2348,
+   "prompt_tokens": 441,
+   "completion_tokens": 79
+  },
+  {
+   "key": "route:llm:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:25.434094+00:00",
+   "ms": 790,
+   "prompt_tokens": 127,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:26.280910+00:00",
+   "ms": 743,
+   "prompt_tokens": 117,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:27.080745+00:00",
+   "ms": 4229,
+   "prompt_tokens": 84,
+   "completion_tokens": 122
+  },
+  {
+   "key": "answers:naive:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:31.366882+00:00",
+   "ms": 3389,
+   "prompt_tokens": 116,
+   "completion_tokens": 101
+  },
+  {
+   "key": "answers:best:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:34.812687+00:00",
+   "ms": 2981,
+   "prompt_tokens": 116,
+   "completion_tokens": 101
+  },
+  {
+   "key": "answers:best_global:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:37.849828+00:00",
+   "ms": 3088,
+   "prompt_tokens": 116,
+   "completion_tokens": 101
+  },
+  {
+   "key": "judges:none:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:40.995044+00:00",
+   "ms": 1858,
+   "prompt_tokens": 428,
+   "completion_tokens": 55
+  },
+  {
+   "key": "judges:naive:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:42.909407+00:00",
+   "ms": 2332,
+   "prompt_tokens": 419,
+   "completion_tokens": 78
+  },
+  {
+   "key": "judges:best:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:45.298172+00:00",
+   "ms": 3233,
+   "prompt_tokens": 419,
+   "completion_tokens": 88
+  },
+  {
+   "key": "judges:best_global:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:48.587123+00:00",
+   "ms": 2820,
+   "prompt_tokens": 419,
+   "completion_tokens": 84
+  },
+  {
+   "key": "route:llm:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:51.464452+00:00",
+   "ms": 795,
+   "prompt_tokens": 121,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:52.316743+00:00",
+   "ms": 1337,
+   "prompt_tokens": 117,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:53.711393+00:00",
+   "ms": 3713,
+   "prompt_tokens": 84,
+   "completion_tokens": 137
+  },
+  {
+   "key": "answers:naive:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:44:57.482912+00:00",
+   "ms": 3549,
+   "prompt_tokens": 145,
+   "completion_tokens": 97
+  },
+  {
+   "key": "answers:best:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:01.090065+00:00",
+   "ms": 4965,
+   "prompt_tokens": 84,
+   "completion_tokens": 137
+  },
+  {
+   "key": "answers:best_global:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:06.113368+00:00",
+   "ms": 3966,
+   "prompt_tokens": 110,
+   "completion_tokens": 107
+  },
+  {
+   "key": "judges:none:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:10.137372+00:00",
+   "ms": 1992,
+   "prompt_tokens": 460,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:naive:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:12.187941+00:00",
+   "ms": 2251,
+   "prompt_tokens": 435,
+   "completion_tokens": 64
+  },
+  {
+   "key": "judges:best:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:14.496927+00:00",
+   "ms": 2178,
+   "prompt_tokens": 460,
+   "completion_tokens": 72
+  },
+  {
+   "key": "judges:best_global:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:16.734095+00:00",
+   "ms": 2756,
+   "prompt_tokens": 428,
+   "completion_tokens": 93
+  },
+  {
+   "key": "route:llm:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:19.549669+00:00",
+   "ms": 788,
+   "prompt_tokens": 122,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:20.397228+00:00",
+   "ms": 758,
+   "prompt_tokens": 122,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:21.211836+00:00",
+   "ms": 4326,
+   "prompt_tokens": 84,
+   "completion_tokens": 161
+  },
+  {
+   "key": "answers:naive:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:25.594389+00:00",
+   "ms": 4217,
+   "prompt_tokens": 145,
+   "completion_tokens": 136
+  },
+  {
+   "key": "answers:best:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:29.869158+00:00",
+   "ms": 4307,
+   "prompt_tokens": 111,
+   "completion_tokens": 146
+  },
+  {
+   "key": "answers:best_global:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:34.234346+00:00",
+   "ms": 4308,
+   "prompt_tokens": 111,
+   "completion_tokens": 146
+  },
+  {
+   "key": "judges:none:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:38.600375+00:00",
+   "ms": 2855,
+   "prompt_tokens": 506,
+   "completion_tokens": 70
+  },
+  {
+   "key": "judges:naive:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:41.513259+00:00",
+   "ms": 2352,
+   "prompt_tokens": 502,
+   "completion_tokens": 76
+  },
+  {
+   "key": "judges:best:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:43.922325+00:00",
+   "ms": 2497,
+   "prompt_tokens": 498,
+   "completion_tokens": 78
+  },
+  {
+   "key": "judges:best_global:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:46.478950+00:00",
+   "ms": 2588,
+   "prompt_tokens": 498,
+   "completion_tokens": 77
+  },
+  {
+   "key": "route:llm:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:49.124427+00:00",
+   "ms": 752,
+   "prompt_tokens": 142,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:49.934352+00:00",
+   "ms": 1435,
+   "prompt_tokens": 141,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:51.426315+00:00",
+   "ms": 1740,
+   "prompt_tokens": 83,
+   "completion_tokens": 51
+  },
+  {
+   "key": "answers:naive:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:53.224041+00:00",
+   "ms": 1803,
+   "prompt_tokens": 131,
+   "completion_tokens": 52
+  },
+  {
+   "key": "answers:best:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:55.084758+00:00",
+   "ms": 1773,
+   "prompt_tokens": 83,
+   "completion_tokens": 51
+  },
+  {
+   "key": "answers:best_global:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:56.915421+00:00",
+   "ms": 1983,
+   "prompt_tokens": 131,
+   "completion_tokens": 51
+  },
+  {
+   "key": "judges:none:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:45:58.955260+00:00",
+   "ms": 2515,
+   "prompt_tokens": 354,
+   "completion_tokens": 53
+  },
+  {
+   "key": "judges:naive:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:01.528261+00:00",
+   "ms": 1770,
+   "prompt_tokens": 363,
+   "completion_tokens": 53
+  },
+  {
+   "key": "judges:best:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:03.355207+00:00",
+   "ms": 1752,
+   "prompt_tokens": 354,
+   "completion_tokens": 53
+  },
+  {
+   "key": "judges:best_global:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:05.164592+00:00",
+   "ms": 2056,
+   "prompt_tokens": 362,
+   "completion_tokens": 64
+  },
+  {
+   "key": "route:llm:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:07.279098+00:00",
+   "ms": 810,
+   "prompt_tokens": 149,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:08.146855+00:00",
+   "ms": 706,
+   "prompt_tokens": 148,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:08.911104+00:00",
+   "ms": 924,
+   "prompt_tokens": 90,
+   "completion_tokens": 9
+  },
+  {
+   "key": "answers:naive:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:09.893013+00:00",
+   "ms": 991,
+   "prompt_tokens": 138,
+   "completion_tokens": 10
+  },
+  {
+   "key": "answers:best:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:10.940644+00:00",
+   "ms": 1055,
+   "prompt_tokens": 90,
+   "completion_tokens": 9
+  },
+  {
+   "key": "answers:best_global:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:12.052807+00:00",
+   "ms": 834,
+   "prompt_tokens": 138,
+   "completion_tokens": 10
+  },
+  {
+   "key": "judges:none:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:12.945246+00:00",
+   "ms": 1716,
+   "prompt_tokens": 318,
+   "completion_tokens": 49
+  },
+  {
+   "key": "judges:naive:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:14.720959+00:00",
+   "ms": 2436,
+   "prompt_tokens": 327,
+   "completion_tokens": 60
+  },
+  {
+   "key": "judges:best:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:17.214800+00:00",
+   "ms": 1905,
+   "prompt_tokens": 318,
+   "completion_tokens": 57
+  },
+  {
+   "key": "judges:best_global:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:19.177987+00:00",
+   "ms": 1766,
+   "prompt_tokens": 327,
+   "completion_tokens": 51
+  },
+  {
+   "key": "route:llm:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:21.001080+00:00",
+   "ms": 1609,
+   "prompt_tokens": 141,
+   "completion_tokens": 11
+  },
+  {
+   "key": "route:oracle:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:22.666735+00:00",
+   "ms": 1668,
+   "prompt_tokens": 140,
+   "completion_tokens": 11
+  },
+  {
+   "key": "answers:none:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:24.394896+00:00",
+   "ms": 3465,
+   "prompt_tokens": 82,
+   "completion_tokens": 98
+  },
+  {
+   "key": "answers:naive:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:27.916942+00:00",
+   "ms": 3817,
+   "prompt_tokens": 130,
+   "completion_tokens": 113
+  },
+  {
+   "key": "answers:best:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:31.791944+00:00",
+   "ms": 2816,
+   "prompt_tokens": 130,
+   "completion_tokens": 95
+  },
+  {
+   "key": "answers:best_global:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:34.665969+00:00",
+   "ms": 3816,
+   "prompt_tokens": 130,
+   "completion_tokens": 119
+  },
+  {
+   "key": "judges:none:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:38.540399+00:00",
+   "ms": 3086,
+   "prompt_tokens": 401,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:naive:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:41.683464+00:00",
+   "ms": 2026,
+   "prompt_tokens": 425,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:best:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:43.768705+00:00",
+   "ms": 2053,
+   "prompt_tokens": 407,
+   "completion_tokens": 66
+  },
+  {
+   "key": "judges:best_global:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:45.880735+00:00",
+   "ms": 2394,
+   "prompt_tokens": 431,
+   "completion_tokens": 70
+  },
+  {
+   "key": "route:llm:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:48.333992+00:00",
+   "ms": 895,
+   "prompt_tokens": 144,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:49.287843+00:00",
+   "ms": 809,
+   "prompt_tokens": 144,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:50.155575+00:00",
+   "ms": 1901,
+   "prompt_tokens": 85,
+   "completion_tokens": 59
+  },
+  {
+   "key": "answers:naive:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:52.115488+00:00",
+   "ms": 2026,
+   "prompt_tokens": 133,
+   "completion_tokens": 53
+  },
+  {
+   "key": "answers:best:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:54.201134+00:00",
+   "ms": 2308,
+   "prompt_tokens": 108,
+   "completion_tokens": 60
+  },
+  {
+   "key": "answers:best_global:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:56.566873+00:00",
+   "ms": 2963,
+   "prompt_tokens": 133,
+   "completion_tokens": 87
+  },
+  {
+   "key": "judges:none:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:46:59.589411+00:00",
+   "ms": 1886,
+   "prompt_tokens": 370,
+   "completion_tokens": 59
+  },
+  {
+   "key": "judges:naive:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:01.532809+00:00",
+   "ms": 2237,
+   "prompt_tokens": 373,
+   "completion_tokens": 74
+  },
+  {
+   "key": "judges:best:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:03.828762+00:00",
+   "ms": 2429,
+   "prompt_tokens": 373,
+   "completion_tokens": 76
+  },
+  {
+   "key": "judges:best_global:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:06.316126+00:00",
+   "ms": 2146,
+   "prompt_tokens": 406,
+   "completion_tokens": 69
+  },
+  {
+   "key": "route:llm:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:08.521684+00:00",
+   "ms": 1517,
+   "prompt_tokens": 124,
+   "completion_tokens": 5
+  },
+  {
+   "key": "route:oracle:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:10.097328+00:00",
+   "ms": 843,
+   "prompt_tokens": 122,
+   "completion_tokens": 5
+  },
+  {
+   "key": "answers:none:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:11.000541+00:00",
+   "ms": 2578,
+   "prompt_tokens": 85,
+   "completion_tokens": 79
+  },
+  {
+   "key": "answers:naive:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:13.633991+00:00",
+   "ms": 3149,
+   "prompt_tokens": 113,
+   "completion_tokens": 67
+  },
+  {
+   "key": "answers:best:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:16.839531+00:00",
+   "ms": 2501,
+   "prompt_tokens": 85,
+   "completion_tokens": 79
+  },
+  {
+   "key": "answers:best_global:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:19.398650+00:00",
+   "ms": 2284,
+   "prompt_tokens": 85,
+   "completion_tokens": 79
+  },
+  {
+   "key": "judges:none:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:21.741295+00:00",
+   "ms": 1999,
+   "prompt_tokens": 391,
+   "completion_tokens": 58
+  },
+  {
+   "key": "judges:naive:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:23.797803+00:00",
+   "ms": 3150,
+   "prompt_tokens": 386,
+   "completion_tokens": 65
+  },
+  {
+   "key": "judges:best:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:27.004946+00:00",
+   "ms": 2170,
+   "prompt_tokens": 391,
+   "completion_tokens": 71
+  },
+  {
+   "key": "judges:best_global:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:29.231276+00:00",
+   "ms": 2036,
+   "prompt_tokens": 391,
+   "completion_tokens": 63
+  },
+  {
+   "key": "route:llm:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:31.325792+00:00",
+   "ms": 758,
+   "prompt_tokens": 125,
+   "completion_tokens": 7
+  },
+  {
+   "key": "route:oracle:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:32.141757+00:00",
+   "ms": 1605,
+   "prompt_tokens": 124,
+   "completion_tokens": 7
+  },
+  {
+   "key": "answers:none:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:33.805528+00:00",
+   "ms": 3818,
+   "prompt_tokens": 89,
+   "completion_tokens": 117
+  },
+  {
+   "key": "answers:naive:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:37.682615+00:00",
+   "ms": 3564,
+   "prompt_tokens": 142,
+   "completion_tokens": 89
+  },
+  {
+   "key": "answers:best:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:41.304445+00:00",
+   "ms": 2524,
+   "prompt_tokens": 114,
+   "completion_tokens": 73
+  },
+  {
+   "key": "answers:best_global:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:43.889879+00:00",
+   "ms": 2936,
+   "prompt_tokens": 114,
+   "completion_tokens": 73
+  },
+  {
+   "key": "judges:none:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:46.885115+00:00",
+   "ms": 2264,
+   "prompt_tokens": 442,
+   "completion_tokens": 44
+  },
+  {
+   "key": "judges:naive:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:49.208233+00:00",
+   "ms": 2717,
+   "prompt_tokens": 425,
+   "completion_tokens": 95
+  },
+  {
+   "key": "judges:best:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:51.985291+00:00",
+   "ms": 3027,
+   "prompt_tokens": 401,
+   "completion_tokens": 63
+  },
+  {
+   "key": "judges:best_global:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:47:55.069493+00:00",
+   "ms": 2142,
+   "prompt_tokens": 401,
+   "completion_tokens": 63
+  }
+ ]
+}

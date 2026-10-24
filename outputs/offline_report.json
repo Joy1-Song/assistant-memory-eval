@@ -1,0 +1,4321 @@
+{
+ "append_only+inject_all": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "27/27",
+   "bad_memory_leaked": "15/15",
+   "noise_on_no_memory_probes": "9/11",
+   "avg_injected": 1.85,
+   "avg_noise": 1.05
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "5/5",
+    "bad_memory_leaked": "2/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 1.43,
+    "avg_noise": 0.71
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "11/11",
+    "bad_memory_leaked": "5/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 1.73,
+    "avg_noise": 0.45
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "2/2",
+    "noise_on_no_memory_probes": "3/4",
+    "avg_injected": 0.75,
+    "avg_noise": 0.75
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "14/14",
+    "bad_memory_leaked": "13/13",
+    "noise_on_no_memory_probes": "1/1",
+    "avg_injected": 2.27,
+    "avg_noise": 1.13
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "19/19",
+    "bad_memory_leaked": "6/6",
+    "noise_on_no_memory_probes": "7/7",
+    "avg_injected": 1.96,
+    "avg_noise": 1.19
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "工作城市：杭州",
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "工作城市：杭州",
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 3,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "工作城市：杭州",
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": true,
+    "injected": 3,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：素食",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 3,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：素食",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "居住城市：成都",
+     "当前状态：在北京出差"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住城市：成都",
+     "当前状态：在北京出差"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": true,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "生日：3月14日"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": true,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "生日：3月14日"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 3,
+    "need_found": 3,
+    "all_need": true,
+    "leak": true,
+    "injected": 4,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习目标：雅思目标7分",
+     "薄弱项：雅思口语",
+     "学习进度：已练完口语Part 1",
+     "学习进度：已练完口语Part 1和Part 2"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "常住地：悉尼",
+     "临时所在地：沈阳（到11月5日）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "常住地：悉尼",
+     "临时所在地：沈阳（到11月5日）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：美式咖啡",
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖南",
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "近期计划：2026-10-10起去日本旅游一周"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": true,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "近期计划：2026-10-10起去日本旅游一周"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "阅读偏好：科幻小说",
+     "阅读偏好：科幻小说、历史类"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "称呼：阿杰"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "回答语言：英文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "回答语言：英文",
+     "回答语言：中文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "电脑设备：MacBook Air M2，macOS 15",
+     "电脑设备：联想笔记本，Windows 11"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：广州",
+     "通勤方式：骑电动车"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "职业：创业公司产品经理",
+     "职业：大厂产品经理"
+    ]
+   }
+  ]
+ },
+ "append_only+lexical": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "5/27",
+   "bad_memory_leaked": "4/15",
+   "noise_on_no_memory_probes": "1/11",
+   "avg_injected": 0.31,
+   "avg_noise": 0.13
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "4/5",
+    "bad_memory_leaked": "1/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.86,
+    "avg_noise": 0.29
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "2/11",
+    "bad_memory_leaked": "2/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 0.55,
+    "avg_noise": 0.18
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "1/2",
+    "noise_on_no_memory_probes": "1/4",
+    "avg_injected": 0.25,
+    "avg_noise": 0.25
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "2/14",
+    "bad_memory_leaked": "3/13",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.47,
+    "avg_noise": 0.2
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "2/19",
+    "bad_memory_leaked": "0/6",
+    "noise_on_no_memory_probes": "0/7",
+    "avg_injected": 0.08,
+    "avg_noise": 0.0
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": true,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "生日：3月14日"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 3,
+    "need_found": 2,
+    "all_need": false,
+    "leak": true,
+    "injected": 3,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习进度：已练完口语Part 1",
+     "学习进度：已练完口语Part 1和Part 2",
+     "学习目标：雅思目标7分"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：美式咖啡",
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖南",
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   }
+  ]
+ },
+ "overwrite+inject_all": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "27/27",
+   "bad_memory_leaked": "4/15",
+   "noise_on_no_memory_probes": "7/11",
+   "avg_injected": 1.49,
+   "avg_noise": 0.69
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "5/5",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 1.14,
+    "avg_noise": 0.43
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "11/11",
+    "bad_memory_leaked": "0/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 1.27,
+    "avg_noise": 0.0
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "1/4",
+    "avg_injected": 0.25,
+    "avg_noise": 0.25
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "14/14",
+    "bad_memory_leaked": "4/13",
+    "noise_on_no_memory_probes": "1/1",
+    "avg_injected": 1.6,
+    "avg_noise": 0.47
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "19/19",
+    "bad_memory_leaked": "3/6",
+    "noise_on_no_memory_probes": "6/7",
+    "avg_injected": 1.73,
+    "avg_noise": 0.96
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "居住区域：杭州滨江区",
+     "工作城市：上海"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "居住城市：成都",
+     "当前状态：在北京出差"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住城市：成都",
+     "当前状态：在北京出差"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 3,
+    "need_found": 3,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习目标：雅思目标7分",
+     "薄弱项：雅思口语",
+     "学习进度：已练完口语Part 1和Part 2"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "常住地：悉尼",
+     "临时所在地：沈阳（到11月5日）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": true,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "常住地：悉尼",
+     "临时所在地：沈阳（到11月5日）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "近期计划：2026-10-10起去日本旅游一周"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": true,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "近期计划：2026-10-10起去日本旅游一周"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "阅读偏好：科幻小说、历史类"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "称呼：阿杰"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "回答语言：英文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "回答语言：中文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "电脑设备：联想笔记本，Windows 11"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：广州",
+     "通勤方式：骑电动车"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "职业：大厂产品经理"
+    ]
+   }
+  ]
+ },
+ "overwrite+lexical": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "5/27",
+   "bad_memory_leaked": "0/15",
+   "noise_on_no_memory_probes": "0/11",
+   "avg_injected": 0.21,
+   "avg_noise": 0.03
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "4/5",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.71,
+    "avg_noise": 0.14
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "2/11",
+    "bad_memory_leaked": "0/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 0.36,
+    "avg_noise": 0.0
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/4",
+    "avg_injected": 0.0,
+    "avg_noise": 0.0
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "2/14",
+    "bad_memory_leaked": "0/13",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.27,
+    "avg_noise": 0.0
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "2/19",
+    "bad_memory_leaked": "0/6",
+    "noise_on_no_memory_probes": "0/7",
+    "avg_injected": 0.08,
+    "avg_noise": 0.0
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 3,
+    "need_found": 2,
+    "all_need": false,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习目标：雅思目标7分",
+     "学习进度：已练完口语Part 1和Part 2"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   }
+  ]
+ },
+ "temporal+inject_all": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "27/27",
+   "bad_memory_leaked": "0/15",
+   "noise_on_no_memory_probes": "6/11",
+   "avg_injected": 1.41,
+   "avg_noise": 0.62
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "5/5",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 1.14,
+    "avg_noise": 0.43
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "11/11",
+    "bad_memory_leaked": "0/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 1.27,
+    "avg_noise": 0.0
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "1/4",
+    "avg_injected": 0.25,
+    "avg_noise": 0.25
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "14/14",
+    "bad_memory_leaked": "0/13",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 1.4,
+    "avg_noise": 0.27
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "19/19",
+    "bad_memory_leaked": "0/6",
+    "noise_on_no_memory_probes": "6/7",
+    "avg_injected": 1.65,
+    "avg_noise": 0.88
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "工作城市：杭州",
+     "居住区域：杭州滨江区"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住区域：杭州滨江区",
+     "工作城市：上海（自2026-10-01起）"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "居住区域：杭州滨江区",
+     "工作城市：上海（自2026-10-01起）"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "过敏：花生",
+     "饮食习惯：半素（吃鱼，不吃其他肉）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "居住城市：成都",
+     "当前状态：在北京出差（到2026-09-11为止）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "居住城市：成都"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "健康状况：高血压，饮食需低盐"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "写作风格：简体中文、口语化、简短"
+    ]
+   },
+   {
+    "need_total": 3,
+    "need_found": 3,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习目标：雅思目标7分",
+     "薄弱项：雅思口语",
+     "学习进度：已练完口语Part 1和Part 2"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙",
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "常住地：悉尼",
+     "临时所在地：沈阳（到11月5日）（到2026-11-05为止）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "常住地：悉尼"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 3,
+    "noise": 2,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "职业：前端开发（React）",
+     "宠物：橘猫大黄",
+     "爱好：吉他（入门）"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "近期计划：2026-10-10起去日本旅游一周（到2026-10-17为止）"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "阅读偏好：科幻小说、历史类"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "称呼：阿杰"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "回答语言：英文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "回答语言：中文"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "电脑设备：联想笔记本，Windows 11"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 2,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：杭州",
+     "运动爱好：跑步"
+    ]
+   },
+   {
+    "need_total": 2,
+    "need_found": 2,
+    "all_need": true,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "所在城市：广州",
+     "通勤方式：骑电动车"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "职业：大厂产品经理"
+    ]
+   }
+  ]
+ },
+ "temporal+lexical": {
+  "overall": {
+   "probes": 39,
+   "all_need_recalled": "5/27",
+   "bad_memory_leaked": "0/15",
+   "noise_on_no_memory_probes": "0/11",
+   "avg_injected": 0.21,
+   "avg_noise": 0.03
+  },
+  "by_dimension": {
+   "accuracy": {
+    "probes": 7,
+    "all_need_recalled": "4/5",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.71,
+    "avg_noise": 0.14
+   },
+   "application": {
+    "probes": 11,
+    "all_need_recalled": "2/11",
+    "bad_memory_leaked": "0/5",
+    "noise_on_no_memory_probes": "0/0",
+    "avg_injected": 0.36,
+    "avg_noise": 0.0
+   },
+   "forget_privacy": {
+    "probes": 4,
+    "all_need_recalled": "0/0",
+    "bad_memory_leaked": "0/2",
+    "noise_on_no_memory_probes": "0/4",
+    "avg_injected": 0.0,
+    "avg_noise": 0.0
+   },
+   "freshness": {
+    "probes": 15,
+    "all_need_recalled": "2/14",
+    "bad_memory_leaked": "0/13",
+    "noise_on_no_memory_probes": "0/1",
+    "avg_injected": 0.27,
+    "avg_noise": 0.0
+   },
+   "relevance": {
+    "probes": 26,
+    "all_need_recalled": "2/19",
+    "bad_memory_leaked": "0/6",
+    "noise_on_no_memory_probes": "0/7",
+    "avg_injected": 0.08,
+    "avg_noise": 0.0
+   }
+  },
+  "rows": [
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M01-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M01-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M02-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M02-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M03-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M04-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M05-P1",
+    "dimensions": [
+     "forget_privacy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M06-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M06-P2",
+    "dimensions": [
+     "forget_privacy",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M07-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M07-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 3,
+    "need_found": 2,
+    "all_need": false,
+    "leak": false,
+    "injected": 2,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M08-P1",
+    "dimensions": [
+     "application",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "学习目标：雅思目标7分",
+     "学习进度：已练完口语Part 1和Part 2"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P1",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "女儿：小米，6岁，喜欢恐龙"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M09-P2",
+    "dimensions": [
+     "relevance",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "侄子：小豆，8岁，喜欢足球"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M10-P2",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M11-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "饮品偏好：喝茶，不再喝咖啡"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M12-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M13-P1",
+    "dimensions": [
+     "application",
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "租房需求：两居室，月租≤4500元，近地铁"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 1,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M14-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": [
+     "老家：湖北"
+    ]
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M15-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M16-P1",
+    "dimensions": [
+     "relevance",
+     "application"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M16-P2",
+    "dimensions": [
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M17-P1",
+    "dimensions": [
+     "accuracy",
+     "freshness"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M18-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P1",
+    "dimensions": [
+     "application",
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M19-P2",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M20-P1",
+    "dimensions": [
+     "freshness",
+     "relevance"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": true,
+    "id": "M21-P2",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M21-P3",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 2,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M22-P1",
+    "dimensions": [
+     "relevance"
+    ],
+    "avoid_total": 0,
+    "injected_text": []
+   },
+   {
+    "need_total": 0,
+    "need_found": 0,
+    "all_need": true,
+    "leak": false,
+    "injected": 1,
+    "noise": 1,
+    "no_memory": false,
+    "id": "M23-P1",
+    "dimensions": [
+     "accuracy"
+    ],
+    "avoid_total": 0,
+    "injected_text": [
+     "同事信息：同事小王芒果过敏"
+    ]
+   },
+   {
+    "need_total": 1,
+    "need_found": 0,
+    "all_need": false,
+    "leak": false,
+    "injected": 0,
+    "noise": 0,
+    "no_memory": false,
+    "id": "M24-P1",
+    "dimensions": [
+     "freshness",
+     "application"
+    ],
+    "avoid_total": 1,
+    "injected_text": []
+   }
+  ]
+ }
+}

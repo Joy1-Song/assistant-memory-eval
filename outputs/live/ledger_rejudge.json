@@ -1,0 +1,1174 @@
+{
+ "requests": [
+  {
+   "key": "rejudge:none:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:30.802461+00:00",
+   "ms": 4039,
+   "prompt_tokens": 421,
+   "completion_tokens": 61
+  },
+  {
+   "key": "rejudge:naive:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:34.843791+00:00",
+   "ms": 3067,
+   "prompt_tokens": 526,
+   "completion_tokens": 111
+  },
+  {
+   "key": "rejudge:best:M01-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:37.913025+00:00",
+   "ms": 2597,
+   "prompt_tokens": 485,
+   "completion_tokens": 88
+  },
+  {
+   "key": "rejudge:none:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:40.512261+00:00",
+   "ms": 2444,
+   "prompt_tokens": 372,
+   "completion_tokens": 80
+  },
+  {
+   "key": "rejudge:naive:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:42.958090+00:00",
+   "ms": 3367,
+   "prompt_tokens": 426,
+   "completion_tokens": 120
+  },
+  {
+   "key": "rejudge:best:M01-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:46.327742+00:00",
+   "ms": 2334,
+   "prompt_tokens": 395,
+   "completion_tokens": 75
+  },
+  {
+   "key": "rejudge:none:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:48.664248+00:00",
+   "ms": 1680,
+   "prompt_tokens": 331,
+   "completion_tokens": 47
+  },
+  {
+   "key": "rejudge:naive:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:50.346545+00:00",
+   "ms": 2049,
+   "prompt_tokens": 362,
+   "completion_tokens": 53
+  },
+  {
+   "key": "rejudge:best:M01-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:52.398505+00:00",
+   "ms": 2213,
+   "prompt_tokens": 331,
+   "completion_tokens": 47
+  },
+  {
+   "key": "rejudge:none:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:54.613861+00:00",
+   "ms": 2906,
+   "prompt_tokens": 418,
+   "completion_tokens": 104
+  },
+  {
+   "key": "rejudge:naive:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:25:57.522655+00:00",
+   "ms": 3685,
+   "prompt_tokens": 502,
+   "completion_tokens": 111
+  },
+  {
+   "key": "rejudge:best:M02-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:01.210531+00:00",
+   "ms": 4584,
+   "prompt_tokens": 492,
+   "completion_tokens": 142
+  },
+  {
+   "key": "rejudge:none:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:05.797261+00:00",
+   "ms": 2006,
+   "prompt_tokens": 435,
+   "completion_tokens": 64
+  },
+  {
+   "key": "rejudge:naive:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:07.805954+00:00",
+   "ms": 1947,
+   "prompt_tokens": 472,
+   "completion_tokens": 55
+  },
+  {
+   "key": "rejudge:best:M02-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:09.755459+00:00",
+   "ms": 2557,
+   "prompt_tokens": 436,
+   "completion_tokens": 88
+  },
+  {
+   "key": "rejudge:none:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:12.315232+00:00",
+   "ms": 1732,
+   "prompt_tokens": 399,
+   "completion_tokens": 50
+  },
+  {
+   "key": "rejudge:naive:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:14.049435+00:00",
+   "ms": 3497,
+   "prompt_tokens": 410,
+   "completion_tokens": 95
+  },
+  {
+   "key": "rejudge:best:M03-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:17.549108+00:00",
+   "ms": 2463,
+   "prompt_tokens": 399,
+   "completion_tokens": 55
+  },
+  {
+   "key": "rejudge:none:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:20.014414+00:00",
+   "ms": 1703,
+   "prompt_tokens": 422,
+   "completion_tokens": 42
+  },
+  {
+   "key": "rejudge:naive:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:21.719853+00:00",
+   "ms": 7387,
+   "prompt_tokens": 462,
+   "completion_tokens": 92
+  },
+  {
+   "key": "rejudge:best:M03-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:29.109656+00:00",
+   "ms": 1516,
+   "prompt_tokens": 409,
+   "completion_tokens": 40
+  },
+  {
+   "key": "rejudge:none:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:30.627883+00:00",
+   "ms": 2185,
+   "prompt_tokens": 368,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:naive:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:32.815484+00:00",
+   "ms": 2555,
+   "prompt_tokens": 354,
+   "completion_tokens": 51
+  },
+  {
+   "key": "rejudge:best:M04-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:35.373102+00:00",
+   "ms": 1975,
+   "prompt_tokens": 368,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:none:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:37.350850+00:00",
+   "ms": 2381,
+   "prompt_tokens": 447,
+   "completion_tokens": 76
+  },
+  {
+   "key": "rejudge:naive:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:39.734420+00:00",
+   "ms": 3635,
+   "prompt_tokens": 508,
+   "completion_tokens": 103
+  },
+  {
+   "key": "rejudge:best:M04-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:43.372446+00:00",
+   "ms": 2912,
+   "prompt_tokens": 447,
+   "completion_tokens": 71
+  },
+  {
+   "key": "rejudge:none:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:46.286364+00:00",
+   "ms": 2213,
+   "prompt_tokens": 390,
+   "completion_tokens": 65
+  },
+  {
+   "key": "rejudge:naive:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:48.502421+00:00",
+   "ms": 2018,
+   "prompt_tokens": 390,
+   "completion_tokens": 65
+  },
+  {
+   "key": "rejudge:best:M05-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:50.523042+00:00",
+   "ms": 2281,
+   "prompt_tokens": 390,
+   "completion_tokens": 61
+  },
+  {
+   "key": "rejudge:none:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:52.806351+00:00",
+   "ms": 4407,
+   "prompt_tokens": 465,
+   "completion_tokens": 101
+  },
+  {
+   "key": "rejudge:naive:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:57.216250+00:00",
+   "ms": 2029,
+   "prompt_tokens": 442,
+   "completion_tokens": 59
+  },
+  {
+   "key": "rejudge:best:M06-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:26:59.247700+00:00",
+   "ms": 2033,
+   "prompt_tokens": 442,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:none:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:01.283458+00:00",
+   "ms": 2014,
+   "prompt_tokens": 466,
+   "completion_tokens": 56
+  },
+  {
+   "key": "rejudge:naive:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:03.300057+00:00",
+   "ms": 2805,
+   "prompt_tokens": 467,
+   "completion_tokens": 66
+  },
+  {
+   "key": "rejudge:best:M06-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:06.107823+00:00",
+   "ms": 1954,
+   "prompt_tokens": 466,
+   "completion_tokens": 59
+  },
+  {
+   "key": "rejudge:none:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:08.064899+00:00",
+   "ms": 2363,
+   "prompt_tokens": 420,
+   "completion_tokens": 80
+  },
+  {
+   "key": "rejudge:naive:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:10.431342+00:00",
+   "ms": 2134,
+   "prompt_tokens": 406,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:best:M07-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:12.568276+00:00",
+   "ms": 2840,
+   "prompt_tokens": 406,
+   "completion_tokens": 66
+  },
+  {
+   "key": "rejudge:none:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:15.411244+00:00",
+   "ms": 2892,
+   "prompt_tokens": 319,
+   "completion_tokens": 49
+  },
+  {
+   "key": "rejudge:naive:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:18.305481+00:00",
+   "ms": 2902,
+   "prompt_tokens": 367,
+   "completion_tokens": 51
+  },
+  {
+   "key": "rejudge:best:M07-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:21.210037+00:00",
+   "ms": 2478,
+   "prompt_tokens": 319,
+   "completion_tokens": 49
+  },
+  {
+   "key": "rejudge:none:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:23.690464+00:00",
+   "ms": 2921,
+   "prompt_tokens": 541,
+   "completion_tokens": 60
+  },
+  {
+   "key": "rejudge:naive:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:26.613637+00:00",
+   "ms": 3015,
+   "prompt_tokens": 641,
+   "completion_tokens": 106
+  },
+  {
+   "key": "rejudge:best:M08-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:29.631659+00:00",
+   "ms": 3474,
+   "prompt_tokens": 597,
+   "completion_tokens": 94
+  },
+  {
+   "key": "rejudge:none:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:33.108690+00:00",
+   "ms": 2597,
+   "prompt_tokens": 371,
+   "completion_tokens": 55
+  },
+  {
+   "key": "rejudge:naive:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:35.707646+00:00",
+   "ms": 2990,
+   "prompt_tokens": 471,
+   "completion_tokens": 75
+  },
+  {
+   "key": "rejudge:best:M09-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:38.700348+00:00",
+   "ms": 2271,
+   "prompt_tokens": 402,
+   "completion_tokens": 74
+  },
+  {
+   "key": "rejudge:none:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:40.973391+00:00",
+   "ms": 1891,
+   "prompt_tokens": 414,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:naive:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:42.867433+00:00",
+   "ms": 2316,
+   "prompt_tokens": 466,
+   "completion_tokens": 77
+  },
+  {
+   "key": "rejudge:best:M09-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:45.186020+00:00",
+   "ms": 2385,
+   "prompt_tokens": 407,
+   "completion_tokens": 74
+  },
+  {
+   "key": "rejudge:none:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:47.573417+00:00",
+   "ms": 3451,
+   "prompt_tokens": 372,
+   "completion_tokens": 61
+  },
+  {
+   "key": "rejudge:naive:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:51.027592+00:00",
+   "ms": 3369,
+   "prompt_tokens": 397,
+   "completion_tokens": 108
+  },
+  {
+   "key": "rejudge:best:M10-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:54.399873+00:00",
+   "ms": 2953,
+   "prompt_tokens": 379,
+   "completion_tokens": 71
+  },
+  {
+   "key": "rejudge:none:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:57.355679+00:00",
+   "ms": 1683,
+   "prompt_tokens": 384,
+   "completion_tokens": 46
+  },
+  {
+   "key": "rejudge:naive:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:27:59.041392+00:00",
+   "ms": 2283,
+   "prompt_tokens": 455,
+   "completion_tokens": 76
+  },
+  {
+   "key": "rejudge:best:M10-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:01.327034+00:00",
+   "ms": 2212,
+   "prompt_tokens": 384,
+   "completion_tokens": 53
+  },
+  {
+   "key": "rejudge:none:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:03.541071+00:00",
+   "ms": 2712,
+   "prompt_tokens": 439,
+   "completion_tokens": 54
+  },
+  {
+   "key": "rejudge:naive:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:06.256073+00:00",
+   "ms": 2533,
+   "prompt_tokens": 422,
+   "completion_tokens": 86
+  },
+  {
+   "key": "rejudge:best:M11-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:08.792213+00:00",
+   "ms": 2209,
+   "prompt_tokens": 406,
+   "completion_tokens": 70
+  },
+  {
+   "key": "rejudge:none:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:11.003925+00:00",
+   "ms": 2970,
+   "prompt_tokens": 405,
+   "completion_tokens": 71
+  },
+  {
+   "key": "rejudge:naive:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:13.977287+00:00",
+   "ms": 2896,
+   "prompt_tokens": 396,
+   "completion_tokens": 68
+  },
+  {
+   "key": "rejudge:best:M12-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:16.876029+00:00",
+   "ms": 2560,
+   "prompt_tokens": 368,
+   "completion_tokens": 84
+  },
+  {
+   "key": "rejudge:none:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:19.438607+00:00",
+   "ms": 2439,
+   "prompt_tokens": 449,
+   "completion_tokens": 51
+  },
+  {
+   "key": "rejudge:naive:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:21.880215+00:00",
+   "ms": 3152,
+   "prompt_tokens": 446,
+   "completion_tokens": 80
+  },
+  {
+   "key": "rejudge:best:M12-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:25.035525+00:00",
+   "ms": 2336,
+   "prompt_tokens": 431,
+   "completion_tokens": 77
+  },
+  {
+   "key": "rejudge:none:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:27.374350+00:00",
+   "ms": 2176,
+   "prompt_tokens": 491,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:naive:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:29.554358+00:00",
+   "ms": 2585,
+   "prompt_tokens": 444,
+   "completion_tokens": 78
+  },
+  {
+   "key": "rejudge:best:M12-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:32.142267+00:00",
+   "ms": 2437,
+   "prompt_tokens": 475,
+   "completion_tokens": 80
+  },
+  {
+   "key": "rejudge:none:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:34.581841+00:00",
+   "ms": 2042,
+   "prompt_tokens": 469,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:naive:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:36.626724+00:00",
+   "ms": 2627,
+   "prompt_tokens": 427,
+   "completion_tokens": 93
+  },
+  {
+   "key": "rejudge:best:M13-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:39.256151+00:00",
+   "ms": 3775,
+   "prompt_tokens": 438,
+   "completion_tokens": 88
+  },
+  {
+   "key": "rejudge:none:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:43.033356+00:00",
+   "ms": 2657,
+   "prompt_tokens": 410,
+   "completion_tokens": 59
+  },
+  {
+   "key": "rejudge:naive:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:45.693494+00:00",
+   "ms": 3033,
+   "prompt_tokens": 420,
+   "completion_tokens": 76
+  },
+  {
+   "key": "rejudge:best:M14-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:48.729610+00:00",
+   "ms": 3581,
+   "prompt_tokens": 495,
+   "completion_tokens": 76
+  },
+  {
+   "key": "rejudge:none:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:52.312891+00:00",
+   "ms": 3341,
+   "prompt_tokens": 373,
+   "completion_tokens": 52
+  },
+  {
+   "key": "rejudge:naive:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:55.657129+00:00",
+   "ms": 2404,
+   "prompt_tokens": 369,
+   "completion_tokens": 54
+  },
+  {
+   "key": "rejudge:best:M15-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:28:58.063334+00:00",
+   "ms": 1938,
+   "prompt_tokens": 369,
+   "completion_tokens": 56
+  },
+  {
+   "key": "rejudge:none:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:00.003693+00:00",
+   "ms": 3370,
+   "prompt_tokens": 405,
+   "completion_tokens": 62
+  },
+  {
+   "key": "rejudge:naive:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:03.376610+00:00",
+   "ms": 4005,
+   "prompt_tokens": 514,
+   "completion_tokens": 71
+  },
+  {
+   "key": "rejudge:best:M16-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:07.384831+00:00",
+   "ms": 2281,
+   "prompt_tokens": 405,
+   "completion_tokens": 67
+  },
+  {
+   "key": "rejudge:none:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:09.669144+00:00",
+   "ms": 2835,
+   "prompt_tokens": 382,
+   "completion_tokens": 62
+  },
+  {
+   "key": "rejudge:naive:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:12.506754+00:00",
+   "ms": 3425,
+   "prompt_tokens": 397,
+   "completion_tokens": 64
+  },
+  {
+   "key": "rejudge:best:M16-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:15.934701+00:00",
+   "ms": 2006,
+   "prompt_tokens": 382,
+   "completion_tokens": 62
+  },
+  {
+   "key": "rejudge:none:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:17.943376+00:00",
+   "ms": 2140,
+   "prompt_tokens": 476,
+   "completion_tokens": 67
+  },
+  {
+   "key": "rejudge:naive:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:20.086289+00:00",
+   "ms": 3019,
+   "prompt_tokens": 474,
+   "completion_tokens": 107
+  },
+  {
+   "key": "rejudge:best:M17-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:23.108598+00:00",
+   "ms": 2676,
+   "prompt_tokens": 473,
+   "completion_tokens": 93
+  },
+  {
+   "key": "rejudge:none:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:25.787134+00:00",
+   "ms": 2601,
+   "prompt_tokens": 427,
+   "completion_tokens": 53
+  },
+  {
+   "key": "rejudge:naive:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:28.391298+00:00",
+   "ms": 2449,
+   "prompt_tokens": 445,
+   "completion_tokens": 69
+  },
+  {
+   "key": "rejudge:best:M18-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:30.842772+00:00",
+   "ms": 3442,
+   "prompt_tokens": 437,
+   "completion_tokens": 64
+  },
+  {
+   "key": "rejudge:none:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:34.287584+00:00",
+   "ms": 2912,
+   "prompt_tokens": 428,
+   "completion_tokens": 54
+  },
+  {
+   "key": "rejudge:naive:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:37.202415+00:00",
+   "ms": 2385,
+   "prompt_tokens": 397,
+   "completion_tokens": 76
+  },
+  {
+   "key": "rejudge:best:M19-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:39.590187+00:00",
+   "ms": 2795,
+   "prompt_tokens": 428,
+   "completion_tokens": 54
+  },
+  {
+   "key": "rejudge:none:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:42.388162+00:00",
+   "ms": 3197,
+   "prompt_tokens": 442,
+   "completion_tokens": 58
+  },
+  {
+   "key": "rejudge:naive:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:45.587414+00:00",
+   "ms": 2715,
+   "prompt_tokens": 475,
+   "completion_tokens": 58
+  },
+  {
+   "key": "rejudge:best:M19-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:48.305614+00:00",
+   "ms": 1870,
+   "prompt_tokens": 442,
+   "completion_tokens": 58
+  },
+  {
+   "key": "rejudge:none:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:50.179106+00:00",
+   "ms": 2627,
+   "prompt_tokens": 512,
+   "completion_tokens": 89
+  },
+  {
+   "key": "rejudge:naive:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:52.808958+00:00",
+   "ms": 3085,
+   "prompt_tokens": 510,
+   "completion_tokens": 78
+  },
+  {
+   "key": "rejudge:best:M20-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:55.896934+00:00",
+   "ms": 3244,
+   "prompt_tokens": 498,
+   "completion_tokens": 77
+  },
+  {
+   "key": "rejudge:none:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:29:59.143965+00:00",
+   "ms": 2646,
+   "prompt_tokens": 354,
+   "completion_tokens": 54
+  },
+  {
+   "key": "rejudge:naive:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:01.793139+00:00",
+   "ms": 3265,
+   "prompt_tokens": 361,
+   "completion_tokens": 67
+  },
+  {
+   "key": "rejudge:best:M21-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:05.061945+00:00",
+   "ms": 2718,
+   "prompt_tokens": 354,
+   "completion_tokens": 61
+  },
+  {
+   "key": "rejudge:none:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:07.783530+00:00",
+   "ms": 1909,
+   "prompt_tokens": 318,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:naive:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:09.695587+00:00",
+   "ms": 2879,
+   "prompt_tokens": 325,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:best:M21-P2",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:12.577174+00:00",
+   "ms": 2977,
+   "prompt_tokens": 318,
+   "completion_tokens": 57
+  },
+  {
+   "key": "rejudge:none:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:15.557206+00:00",
+   "ms": 2046,
+   "prompt_tokens": 401,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:naive:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:17.607172+00:00",
+   "ms": 2358,
+   "prompt_tokens": 423,
+   "completion_tokens": 67
+  },
+  {
+   "key": "rejudge:best:M21-P3",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:19.969293+00:00",
+   "ms": 2991,
+   "prompt_tokens": 423,
+   "completion_tokens": 72
+  },
+  {
+   "key": "rejudge:none:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:22.964013+00:00",
+   "ms": 1935,
+   "prompt_tokens": 370,
+   "completion_tokens": 58
+  },
+  {
+   "key": "rejudge:naive:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:24.902512+00:00",
+   "ms": 2394,
+   "prompt_tokens": 429,
+   "completion_tokens": 78
+  },
+  {
+   "key": "rejudge:best:M22-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:27.300350+00:00",
+   "ms": 2606,
+   "prompt_tokens": 371,
+   "completion_tokens": 88
+  },
+  {
+   "key": "rejudge:none:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:29.910382+00:00",
+   "ms": 3324,
+   "prompt_tokens": 391,
+   "completion_tokens": 63
+  },
+  {
+   "key": "rejudge:naive:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:33.237298+00:00",
+   "ms": 2162,
+   "prompt_tokens": 400,
+   "completion_tokens": 53
+  },
+  {
+   "key": "rejudge:best:M23-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:35.403356+00:00",
+   "ms": 2594,
+   "prompt_tokens": 391,
+   "completion_tokens": 72
+  },
+  {
+   "key": "rejudge:none:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:38.000632+00:00",
+   "ms": 1606,
+   "prompt_tokens": 442,
+   "completion_tokens": 43
+  },
+  {
+   "key": "rejudge:naive:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:39.610381+00:00",
+   "ms": 2250,
+   "prompt_tokens": 427,
+   "completion_tokens": 71
+  },
+  {
+   "key": "rejudge:best:M24-P1",
+   "kind": "gen",
+   "texts": 0,
+   "status": "ok",
+   "at": "2026-10-24T11:30:41.863420+00:00",
+   "ms": 3111,
+   "prompt_tokens": 423,
+   "completion_tokens": 79
+  }
+ ]
+}

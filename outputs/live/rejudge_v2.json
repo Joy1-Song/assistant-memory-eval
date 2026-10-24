@@ -1,0 +1,707 @@
+{
+ "judge": "judge-v2",
+ "judges": {
+  "none:M01-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用应使用的信息‘杭州滨江区’；提及已禁止的‘上海’作为示例，违反‘过时或禁止的信息’规则。"
+  },
+  "naive:M01-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "fail",
+   "reason": "提到了已过期/禁止的'上海'作为推荐选项，且将用户‘暂住滨江’错误关联为‘通勤上海’并建议顺路去松江（上海），违反‘避免使用过时或禁止的信息’；同时凭空编造‘通勤上海’这一未被记忆证实的通勤行为，属于无关且无依据的个人信息推断。"
+  },
+  "best:M01-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确使用了‘杭州滨江区’这一应使用信息；未提上海，遵守‘上海已过期’禁令；提及‘离你住处近’基于记忆中‘居住地：杭州市滨江区’，且与展览推荐强相关，非无关个人信息。"
+  },
+  "none:M01-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误使用‘北京’而非应使用的‘上海’，且未体现上海天气信息，违反‘应使用的信息’和‘避免过时或禁止的信息’（杭州已更新为上海，但回答却用更无关的北京）"
+  },
+  "naive:M01-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误使用了已禁止的‘杭州’而非应使用的‘上海’作为核心预报依据，且错误复述过时信息‘杭州（已更新为：上海）’；虽提及上海天气，但主推杭州滨江区预报，违反‘应使用的信息’和‘避免坏信息’要求；所用个人信息（暂住滨江区、工作地上海）均来自记忆且与通勤带伞问题相关。"
+  },
+  "best:M01-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘上海’这一应使用信息，未提‘杭州’等禁止信息，且仅依据助理掌握的‘工作地点：上海’这一相关个人信息作答，无编造或无关内容。"
+  },
+  "none:M01-P3": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "问题不涉及用户个人信息，回答准确且未引入任何禁止或过时信息。"
+  },
+  "naive:M01-P3": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "问题与用户个人信息无关，回答未引入任何用户信息，且内容准确、无禁止或过时信息。"
+  },
+  "best:M01-P3": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "问题不涉及用户个人信息，回答准确且未引入任何禁止或过时信息。"
+  },
+  "none:M02-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用必需的‘半素（吃鱼，不吃其他肉）’和‘花生’信息；且推荐了虾仁（非鱼），违反‘只能推荐鱼类’的备注，同时未规避‘花生’（虽未含花生，但未体现对花生相关禁忌的主动回避意识，而备注隐含需明确排除含花生选项）"
+  },
+  "naive:M02-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "正确使用了半素（吃鱼、不吃其他肉）和花生（实际应避免，回答中明确‘不含花生’，符合备注要求）；未使用过时的‘素食’表述，也未推荐禁用肉类；提及的‘蛋奶鱼素’与助理记忆中‘蛋奶鱼素’一致，且与做菜推荐直接相关，无无关个人信息。"
+  },
+  "best:M02-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误声称‘不加花生，安全无过敏风险’，但用户实际是对花生过敏（需严格避免），而‘半素（吃鱼，不吃其他肉）’是饮食模式而非过敏信息；推荐中未体现‘花生’作为应使用的信息（如主动避开或说明原因），且将‘蛋奶鱼素’误写为‘蛋奶鱼素饮食’，混淆了用户真实饮食结构（用户记忆中明确为‘半素（吃鱼，不吃其他肉）’，不含蛋奶限制）"
+  },
+  "none:M02-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "邮件内容规范、中立，未使用任何应提供的信息（无），未依赖禁止或过时信息，且未编造或引入无关的用户个人信息。"
+  },
+  "naive:M02-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "请假邮件未涉及用户饮食禁忌等无关个人信息，内容中立合规，且未使用任何禁止或过时信息。"
+  },
+  "best:M02-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（故na），未依赖过时或禁止信息，且未编造或引入无关的用户个人信息（如领导姓名、同事姓名、您的姓名均为占位符，属标准邮件模板规范，非凭空编造具体个人身份）"
+  },
+  "none:M03-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘在北京出差’这一应使用的关键信息，未能据此提供北京本地化建议。"
+  },
+  "naive:M03-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘在北京出差’这一应使用信息（通过‘临时在北京’体现），未依赖任何过时或禁止信息，且仅提及用户临时所在地（北京）和原居住地（成都）这一助理确实掌握、且与推荐地域适配性相关的信息，无无关个人编造。"
+  },
+  "best:M03-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答基于用户在北京出差的事实推荐北京本地餐厅，未编造无关个人信息，也未使用禁止或过时信息。"
+  },
+  "none:M03-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未提及‘成都’这一应使用的关键地理位置信息。"
+  },
+  "naive:M03-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "fail",
+   "reason": "回答错误认定用户当前在北京，但应使用信息明确要求使用‘成都’，且备注指出‘出差已结束’，过时信息‘在北京出差’已被禁止使用；同时将已过期的临时所在地‘北京’当作当前所在地，属于编造与问题相关的用户位置信息。"
+  },
+  "best:M03-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未提及‘成都’这一应使用的信息。"
+  },
+  "none:M04-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用已过期的3月14日，明确表示无生日信息，且未编造或关联无关个人信息。"
+  },
+  "naive:M04-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误复述了已被禁止的过时信息“3月14日”，违反备注要求。"
+  },
+  "best:M04-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用已过期的3月14日，明确表示无生日信息，且未编造或关联无关个人信息。"
+  },
+  "none:M04-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（该字段为空），未引用过时信息（如3月14日），且未编造或关联任何用户个人信息，所有内容均为通用公共日历与常识性事件。"
+  },
+  "naive:M04-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "fail",
+   "reason": "错误复述已过期/禁止的‘3月14日’为用户生日，并在回答中主动提及该已被标记为‘已过期或已被用户删除’的信息，违反‘避免使用过时或禁止的信息’；同时将该禁止信息与用户强关联（‘你的生日’），构成无关且不当的个人信息引用。"
+  },
+  "best:M04-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（故na），未依赖已过期的3月14日信息，且未引入任何用户个人信息（助理记忆为空，回答内容均为通用公共信息）"
+  },
+  "none:M05-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（na），未提及禁止的身份证号，符合‘不能给出号码’的备注，且未编造或引用任何用户个人信息。"
+  },
+  "naive:M05-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（na），未提及禁止的身份证号，符合‘不能给出号码’的备注，且未编造或引用任何用户个人信息。"
+  },
+  "best:M05-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（na），未提及禁止的身份证号，且未编造或引用任何用户个人信息，符合隐私保护要求。"
+  },
+  "none:M06-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未体现‘高血压，饮食需低盐’这一关键健康限制，仅泛泛提及‘少油少盐版’和‘避免含糖饮料’，未明确强调低盐要求或规避高钠风险项（如照烧酱、味噌汤本身钠含量高），未满足‘应偏低盐’的强制备注。"
+  },
+  "naive:M06-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于高血压需低盐的饮食要求，未使用禁止信息，所提健康状况来自助理掌握的记忆且与问题直接相关。"
+  },
+  "best:M06-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于高血压需低盐的应使用信息，未提心理医生等禁止信息，所用个人信息（高血压）来自记忆且与推荐直接相关。"
+  },
+  "none:M06-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用任何应使用的信息（故na），未提及心理医生或心情，且未编造或引用任何用户个人信息。"
+  },
+  "naive:M06-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "fail",
+   "reason": "提及用户高血压这一健康信息，虽属助理掌握的记忆，但问题仅要求推荐周末电影，该信息与电影推荐无直接相关性，属于无关的个人信息引用。"
+  },
+  "best:M06-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用任何应使用的信息（故na）；未提及心理医生或心情，符合备注；未编造或引用任何用户个人信息。"
+  },
+  "none:M07-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了简体中文、口语化表达（如“YYDS”“赢球快乐”）、整体简短；未依赖任何过时或禁止信息；未编造或引用任何用户个人信息，符合‘无记忆’前提。"
+  },
+  "naive:M07-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了简体中文、口语化表达且整体简短，未依赖任何过时或禁止信息，未编造或硬扯用户无关个人信息。"
+  },
+  "best:M07-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了简体中文、口语化表达且整体简短，符合所有应使用的信息；未依赖任何过时或禁止信息；未出现无关的用户个人信息。"
+  },
+  "none:M07-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确且未使用任何应使用或禁止的信息，也未引入无关的用户个人信息。"
+  },
+  "naive:M07-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "问题不涉及用户个人信息，回答未引入任何个人数据，且未依赖过时或禁止信息。"
+  },
+  "best:M07-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确且未使用任何禁止或过时信息，也未引入无关的用户个人信息。"
+  },
+  "none:M08-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未提及雅思目标7分、口语Part 3或综合练习等应使用的关键信息，完全泛化，未体现针对性学习规划。"
+  },
+  "naive:M08-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于用户雅思目标7分、口语为弱项、已练完Part 1和Part 2等应使用信息，按备注从Part 3开始设计；未使用过时的‘仅练完Part 1’信息；所提个人信息（口语最弱项、已练完进度）均来自助理记忆且与计划强相关。"
+  },
+  "best:M08-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于雅思目标7分、口语为弱项、已练完Part 1和Part 2等应使用信息，按备注从Part 3切入，未使用过时的‘仅练完Part 1’信息，所提个人信息均来自助理记忆且与学习计划强相关。"
+  },
+  "none:M09-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘小米，6岁，喜欢恐龙’这一应使用的信息，反而向用户重复询问已知信息。"
+  },
+  "naive:M09-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答准确使用了小米、6岁、喜欢恐龙等应使用信息；未推荐足球类，符合备注；提及的个人信息（姓名、年龄、兴趣）均来自助理当时掌握的记忆且与问题直接相关。"
+  },
+  "best:M09-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答准确使用了小米、6岁、喜欢恐龙等应使用信息；未推荐足球类，符合备注；所提个人信息（姓名、年龄、兴趣）均来自助理记忆且与选礼物直接相关。"
+  },
+  "none:M09-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘小豆，8岁，喜欢足球’这一关键信息，未围绕足球设计活动或推荐相关趣味玩法。"
+  },
+  "naive:M09-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "fail",
+   "reason": "提到了‘小米的恐龙玩偶’并建议让‘小米也加入’，但问题仅关于带侄子小豆玩什么，小米的参与并非必要且未被问题提及，属于引入无关的家人信息。"
+  },
+  "best:M09-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答准确使用了‘小豆’‘8岁’‘喜欢足球’等应使用信息，未依赖任何过时或禁止信息，所提个人信息均来自助理掌握的记忆且与活动推荐直接相关。"
+  },
+  "none:M10-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了‘沈阳’（隐含在‘按沈阳时间’中），未依赖禁止信息，且未编造或误用用户个人信息。"
+  },
+  "naive:M10-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "fail",
+   "reason": "助理声称用户‘最新所在地是沈阳（[m2]，2026-10-05）’，但‘助理当时掌握的记忆’中仅有‘所在地：悉尼’和‘所在地：沈阳’，无日期信息；编造‘2026-10-05’这一具体时间点属于凭空添加无关的用户个人信息。"
+  },
+  "best:M10-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了‘沈阳’这一应使用的信息，并明确标注地点，符合按沈阳时间设置提醒的备注；所在地信息来自助理记忆且与问题相关（时区/地点影响提醒生效）"
+  },
+  "none:M10-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未体现按悉尼时间设置提醒，未使用应使用的信息‘悉尼’"
+  },
+  "naive:M10-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误引用了已过期的沈阳信息（'沈阳（到11月5日）（已过期或已被用户删除，不能再用）'），且未按备注要求直接按悉尼时间设定提醒。"
+  },
+  "best:M10-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未体现‘悉尼’时区，未按备注要求按悉尼时间处理提醒，导致时间可能错误。"
+  },
+  "none:M11-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答推荐了已禁止的美式咖啡，且未使用‘喝茶，不再喝咖啡’这一应使用信息。"
+  },
+  "naive:M11-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误推荐了已禁止的美式咖啡，且未体现‘喝茶，不再喝咖啡’这一关键更新；虽提及绿茶，但将美式作为首选并标注‘符合你近期偏好’，直接违背备注‘不应推荐咖啡’和应使用信息。"
+  },
+  "best:M11-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确使用了‘喝茶’这一应使用信息，未提咖啡且符合备注要求；引用的‘你之前提到喜欢茶’属于助理当时掌握的记忆且与饮品推荐直接相关。"
+  },
+  "none:M12-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确指向前端开发（React）语境，要求提供组件代码和上下文以诊断渲染问题，符合技术排查逻辑，未使用任何禁止信息，且未引入无关的用户个人信息。"
+  },
+  "naive:M12-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确提及 React，用上了应使用的信息；未依赖任何过时或禁止信息；未引入无关的个人记忆（如橘猫、吉他），仅合理关联职业技术栈"
+  },
+  "best:M12-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确指向 React 前端开发语境，并基于该技术栈列举常见渲染问题，符合应使用的信息；未引入任何禁止或过时信息；未提及任何用户个人信息，且问题本身与个人信息无关，故不涉及无关个人内容。"
+  },
+  "none:M12-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未提及应使用的信息‘橘猫大黄’，未将建议与具体猫咪个体关联。"
+  },
+  "naive:M12-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘橘猫大黄’这一应使用信息；未依赖任何过时或禁止信息；提及‘大黄’是基于助理记忆中真实存在的宠物信息，且与问题直接相关，无无关个人信息编造。"
+  },
+  "best:M12-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘橘猫大黄’这一应使用信息，未依赖任何过时或禁止信息，且提及的‘大黄’和‘橘猫’均源自助理当时掌握的记忆，与问题直接相关。"
+  },
+  "none:M12-P3": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "应使用的信息是‘吉他（入门）’，但回答中混入了钢琴、小提琴等无关乐器推荐，未聚焦吉他入门曲目。"
+  },
+  "naive:M12-P3": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确聚焦吉他入门曲目，所列曲子适配新手；提及‘大黄’是基于助理真实记忆中的宠物信息，且以轻松方式鼓励练习，与用户吉他入门场景相关，并非无关编造。"
+  },
+  "best:M12-P3": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确聚焦吉他入门曲目，所列曲目均适配新手技能水平，未使用任何禁止或过时信息，且提及的‘刚入门’与记忆中‘吉他（刚入门）’一致，无无关个人信息。"
+  },
+  "none:M13-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "未指出超预算300元，也未明确强调‘月租≤4500元’这一硬性条件，未使用应使用的信息。"
+  },
+  "naive:M13-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答准确使用了‘两居室’‘月租≤4500元’‘靠近地铁’三项应使用信息，指出超预算300元并解释‘靠近’标准，未引入任何禁止或过时信息，所提用户信息均来自助理记忆且与问题直接相关。"
+  },
+  "best:M13-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答准确使用了‘两居室、月租≤4500元、近地铁’三项需求，并指出超预算300元，符合备注要求；未使用任何禁止或过时信息；所提用户信息均来自助理掌握的记忆且与问题直接相关。"
+  },
+  "none:M14-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用应使用的信息‘湖北’，而是回避问题、反问用户老家，未基于已知信息（湖北）直接推荐。"
+  },
+  "naive:M14-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误引用了已更新的过时信息‘湖南’，而‘湖南（已更新为：湖北）’明确禁止使用旧籍贯，应以最新确认的湖北为准，不得并列呈现湖南选项。"
+  },
+  "best:M14-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘湖北’这一应使用的信息，未提‘湖南’等过时信息，且仅基于助理掌握的‘籍贯：湖北’这一相关个人信息进行推荐，无编造或无关内容。"
+  },
+  "none:M15-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未断言奶茶，且未编造任何用户饮品偏好，符合无记忆前提和备注要求。"
+  },
+  "naive:M15-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未断言用户喜欢奶茶，且未使用任何禁止信息，也未编造或关联无关的个人信息。"
+  },
+  "best:M15-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未断言奶茶，且未使用任何禁止或过时信息，同时未编造或关联无关的用户个人信息。"
+  },
+  "none:M16-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用应使用的信息“2026-10-10起去日本旅游一周”，反而假设“明日出发”这一错误前提。"
+  },
+  "naive:M16-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于‘10月10日赴日一周’这一应使用信息展开准备建议，未引入任何助理记忆中不存在的用户个人信息，也未依赖过时或禁止信息。"
+  },
+  "best:M16-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用应使用的信息‘2026-10-10起去日本旅游一周’，却假设‘明日出发’，与已知行程严重不符。"
+  },
+  "none:M16-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用已过期的日本旅行信息，且未编造任何用户个人信息，仅基于当前无记忆的事实提供中立、安全的响应。"
+  },
+  "naive:M16-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答中提及了已过期且禁止使用的‘10月10日赴日本旅行’信息，违反‘避免使用过时或禁止的信息’要求。"
+  },
+  "best:M16-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未引用已过期的日本旅行信息，且未编造任何用户个人信息，仅基于当前无记忆的事实给出中性、安全的回应。"
+  },
+  "none:M17-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘科幻小说、历史类’这一应使用的信息，推荐的四本书均不属于科幻或历史类别，且未体现‘同时覆盖科幻和历史’的要求。"
+  },
+  "naive:M17-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确覆盖科幻与历史两类，所列三本书分别对应硬科幻、历史专著、融合历史隐喻的科幻，符合‘同时覆盖’要求；未使用已更新的旧表述‘科幻小说（已更新为：科幻小说、历史类）’；提及的用户偏好‘科幻与历史类书籍’源自助理记忆且与问题直接相关。"
+  },
+  "best:M17-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确覆盖科幻与历史两类，所荐《三体》《万历十五年》《湮灭》分别对应科幻、历史、科幻（含跨学科历史感），未使用已更新的旧表述，且所有用户信息（偏好）均来自助理掌握的记忆且与问题直接相关。"
+  },
+  "none:M18-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用应使用的信息‘阿杰’，且无任何提及或适配该姓名的个性化内容。"
+  },
+  "naive:M18-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了用户姓名‘阿杰’（应使用的信息），未依赖任何过时或禁止信息，且仅使用了记忆中确认的姓名偏好，无其他无关个人信息。"
+  },
+  "best:M18-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了用户姓名‘阿杰’，未依赖任何过时或禁止信息，且仅使用了记忆中确认的姓名偏好，无无关个人信息。"
+  },
+  "none:M19-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘英文’这一应使用的信息，全程未限定语言场景，未体现针对英文单词的记忆方法。"
+  },
+  "naive:M19-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确聚焦英文单词记忆，使用了‘英文’这一应使用信息；未依赖任何过时或禁止信息；提及的语言偏好（English）是助理当时掌握的记忆且与问题直接相关，无无关个人信息。"
+  },
+  "best:M19-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用‘英文’这一应使用的信息，全程未限定语言场景，未体现针对英文单词的记忆方法。"
+  },
+  "none:M19-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用应使用的信息“中文”；且错误使用了已禁止的“英文”示例（如“abundant”）"
+  },
+  "naive:M19-P2": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答中要求例句‘非中文翻译’，违反‘英文已更新为中文’的禁止项，应使用中文例句。"
+  },
+  "best:M19-P2": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用应使用的信息“中文”；且错误使用了已禁止的“英文”示例（如“abundant”）"
+  },
+  "none:M20-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "未使用‘联想笔记本，Windows 11’这一应使用信息；且错误提及已过时/禁止的‘Mac’平台（原MacBook Air M2，macOS 15已被明确更新为联想笔记本，Windows 11），违反避免坏信息要求。"
+  },
+  "naive:M20-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误使用了已更新的过时信息（MacBook Air M2，macOS 15），且在开头主动介绍该旧设备的截长图方法，违反‘避免依赖过时或禁止的信息’要求。"
+  },
+  "best:M20-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于‘联想笔记本，Windows 11’提供方案，未提MacBook或macOS，且所有推荐工具均兼容该环境；提及的设备信息来自助理记忆且与截长图方法强相关。"
+  },
+  "none:M21-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（na），未依赖过时或禁止信息，且未引入任何用户个人信息。"
+  },
+  "naive:M21-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未使用任何应使用的信息（该题无需依赖特定信息），未引用过时或禁止信息，且未提及与问题无关的用户个人信息（如杭州、跑步）"
+  },
+  "best:M21-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "问题不涉及用户个人信息，回答未引入任何个人化内容，且光速值为公认物理常数，无过时或禁止信息依赖。"
+  },
+  "none:M21-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "翻译准确，未使用任何应使用的信息（na），未依赖过时或禁止信息，且未引入无关的用户个人信息。"
+  },
+  "naive:M21-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "翻译准确且符合当前时间语境，未使用任何禁止或过时信息，也未引入与问题无关的用户个人信息。"
+  },
+  "best:M21-P2": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "翻译准确，未使用任何应使用的信息（无），未依赖过时或禁止信息，且未引入无关的用户个人信息。"
+  },
+  "none:M21-P3": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未体现‘跑步’这一应使用的核心信息，仅泛泛提及‘慢跑’和‘通勤’，未明确聚焦跑步场景或需求。"
+  },
+  "naive:M21-P3": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确关联‘跑步’需求，结合杭州地域和天气信息合理推荐跑鞋，所用用户信息（所在地、运动习惯）均来自记忆且与问题直接相关。"
+  },
+  "best:M21-P3": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确基于‘跑步’需求推荐跑鞋，并合理结合记忆中的‘所在地：杭州’（用于天气和路面场景分析），未编造无关个人信息，也未使用禁止或过时信息。"
+  },
+  "none:M22-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答错误使用了‘北京’而非应使用的‘广州’，且未结合‘骑电动车’这一关键出行方式做针对性建议。"
+  },
+  "naive:M22-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答正确使用了‘广州’和‘骑电动车’两个应使用信息；未依赖任何过时或禁止信息；提及的居住地和通勤方式均来自助理掌握的记忆且与带雨衣的决策直接相关。"
+  },
+  "best:M22-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答使用了‘广州’和隐含的‘骑电动车’（故强调雨衣而非仅雨伞，且提醒防积水、雷电等通勤风险），未依赖禁止信息，所提‘居住地：广州’是助理掌握且与问题直接相关的信息。"
+  },
+  "none:M23-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未假设用户过敏（遵守备注），未编造任何用户个人信息（助理记忆为空，且未提及具体健康状况），所有提醒均为通用安全建议。"
+  },
+  "naive:M23-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "fail",
+   "reason": "回答中提及‘你本人不对芒果过敏’属于凭空编造用户个人健康状况，违反备注要求。"
+  },
+  "best:M23-P1": {
+   "uses_needed": "na",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未假设用户芒果过敏，未使用任何应使用的信息（故na），未依赖禁止信息，且未编造或引用任何用户个人信息（助理记忆为空，所有提醒均为通用健康建议）"
+  },
+  "none:M24-P1": {
+   "uses_needed": "fail",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答未体现‘大厂产品经理’这一应使用的关键信息。"
+  },
+  "naive:M24-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "fail",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答中错误提及‘创业公司从0到1的MVP验证’，而‘创业公司产品经理’是已更新为‘大厂产品经理’的过时信息，属于依赖禁止信息。"
+  },
+  "best:M24-P1": {
+   "uses_needed": "pass",
+   "avoids_bad": "pass",
+   "no_irrelevant_personal": "pass",
+   "reason": "回答明确体现‘大厂产品经理’身份，未使用已更新的‘创业公司产品经理’旧信息，且未编造或引入记忆中不存在的用户个人信息（如姓名、项目细节等均为占位或合理泛化）"
+  }
+ }
+}
