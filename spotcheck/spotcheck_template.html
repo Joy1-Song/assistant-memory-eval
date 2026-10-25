@@ -1,0 +1,201 @@
+<title>记忆评审抽检</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one reading column of cards, a sticky progress bar on top; verdict buttons close the card. */
+:root {
+  --bg: #f6f7f5; --card: #ffffff; --fg: #1d2420; --muted: #5d6862; --line: #dde2de;
+  --accent: #2f6b55; --accent-soft: #e3efe9; --pass: #2f6b55; --pass-soft: #e3efe9;
+  --fail: #a2402f; --fail-soft: #f6e4df; --mark: #f3ecd2;
+  --f-body: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --f-num: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #151a17; --card: #1d2420; --fg: #e7ece8; --muted: #9aa69f; --line: #2f3833;
+  --accent: #7cc3a4; --accent-soft: #23332b; --pass: #7cc3a4; --pass-soft: #22352c;
+  --fail: #e48b78; --fail-soft: #3a2621; --mark: #3a3522; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #151a17; --card: #1d2420; --fg: #e7ece8; --muted: #9aa69f; --line: #2f3833;
+  --accent: #7cc3a4; --accent-soft: #23332b; --pass: #7cc3a4; --pass-soft: #22352c;
+  --fail: #e48b78; --fail-soft: #3a2621; --mark: #3a3522; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.65; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 780px; margin: 0 auto; padding-block: 20px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-size: 22px; margin: 0 0 4px; text-wrap: balance; }
+.sub { color: var(--muted); margin: 0 0 16px; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg);
+  padding: 10px 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+.progress { flex: 1 1 200px; min-width: 0; }
+.track { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.fill { height: 100%; width: 0; background: var(--accent); transition: width .2s; }
+.count { font-family: var(--f-num); font-variant-numeric: tabular-nums; font-size: 13px; color: var(--muted); }
+.toggle { display: flex; gap: 6px; align-items: center; font-size: 14px; color: var(--muted); }
+.status { font-size: 13px; color: var(--muted); }
+.status.err { color: var(--fail); }
+details.rules { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin: 16px 0; }
+details.rules summary { cursor: pointer; font-weight: 600; }
+details.rules ol { margin: 8px 0 4px; padding-left: 20px; }
+details.rules p { margin: 6px 0; color: var(--muted); }
+.list { display: grid; gap: 14px; margin-top: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 10px; min-width: 0; }
+.card.done-pass { border-left: 4px solid var(--pass); }
+.card.done-fail { border-left: 4px solid var(--fail); }
+.head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.num { font-family: var(--f-num); font-variant-numeric: tabular-nums; color: var(--muted); font-size: 13px; }
+.q { font-weight: 600; font-size: 16px; }
+.time { color: var(--muted); font-size: 13px; }
+.chip { font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--mark); }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; }
+@media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+.field { min-width: 0; }
+.label { font-size: 12px; letter-spacing: .04em; color: var(--muted); }
+.field ul { margin: 2px 0 0; padding-left: 18px; }
+.none { color: var(--muted); }
+.answer { background: var(--accent-soft); border-radius: 6px; padding: 10px 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+button.v { font: inherit; padding: 6px 18px; border-radius: 6px; border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; }
+button.v:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.v[aria-pressed="true"].pass { background: var(--pass-soft); border-color: var(--pass); color: var(--pass); font-weight: 600; }
+button.v[aria-pressed="true"].fail { background: var(--fail-soft); border-color: var(--fail); color: var(--fail); font-weight: 600; }
+button.v:disabled { opacity: .5; cursor: default; }
+textarea { font: inherit; font-size: 14px; width: 100%; min-height: 38px; resize: vertical; border: 1px solid var(--line);
+  border-radius: 6px; padding: 6px 8px; background: var(--card); color: var(--fg); box-sizing: border-box; }
+.done { text-align: center; color: var(--muted); padding: 24px 0; }
+@media (prefers-reduced-motion: reduce) { .fill { transition: none; } }
+</style>
+
+<div class="wrap">
+  <h1>记忆评审抽检</h1>
+  <p class="sub">32 条助理回答，判断每条是否通过。点按钮就会自动保存，可以分几次做完。</p>
+
+  <div class="bar">
+    <div class="progress">
+      <div class="track"><div class="fill" id="fill"></div></div>
+    </div>
+    <span class="count" id="count">0 / 32</span>
+    <label class="toggle"><input type="checkbox" id="onlyTodo"> 只看未判的</label>
+    <span class="status" id="status">正在连接保存服务…</span>
+  </div>
+
+  <details class="rules" open>
+    <summary>怎么判（三条都满足才算通过）</summary>
+    <ol>
+      <li>用上了「应该用上的信息」：意思用上即可，不要求原词。显示「（无）」时这条自动满足。</li>
+      <li>没有依赖「不能用的信息」，并且符合「备注」。旧信息更新后，新信息里仍保留的部分可以用。</li>
+      <li>回答里提到的用户个人信息，都来自「助理当时记得的内容」，并且和问题相关。凭空编造或硬扯无关的个人信息就不通过；一般性的安全提醒不算。</li>
+    </ol>
+    <p>只看和用户个人信息有关的这三点。和个人信息无关的常识错误（比如编了一个不存在的展览）不影响判定，可以写在备注里。</p>
+    <p>助理没被告知的信息，没用上不算它的错。这里不显示模型评审的结论，你判完我再对比。</p>
+  </details>
+
+  <div class="list" id="list"></div>
+  <p class="done" id="allDone" hidden>32 条都判完了，回到对话里告诉我就行。</p>
+</div>
+
+<script type="application/json" id="items">__ITEMS__</script>
+<script>
+const items = JSON.parse(document.getElementById("items").textContent);
+const verdicts = {};          // id -> {verdict, note}
+let db = null;
+const $ = (id) => document.getElementById(id);
+const docId = (n) => "n" + String(n).padStart(2, "0");
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+
+function field(label, values) {
+  const f = el("div", "field");
+  f.append(el("div", "label", label));
+  if (!values.length) { f.append(el("div", "none", "（无）")); return f; }
+  const ul = el("ul");
+  values.forEach((v) => ul.append(el("li", "", v)));
+  f.append(ul);
+  return f;
+}
+
+const cards = {};
+function buildCards() {
+  const list = $("list");
+  items.forEach((it) => {
+    const id = docId(it.n);
+    const card = el("article", "card");
+    const head = el("div", "head");
+    head.append(el("span", "num", "#" + it.n), el("span", "q", it.question), el("span", "time", it.at));
+    if (it.no_memory) head.append(el("span", "chip", "这个问题和用户个人信息无关"));
+    const grid = el("div", "grid");
+    grid.append(field("助理当时记得的内容", it.memories), field("应该用上的信息", it.need),
+                field("不能用的信息", it.avoid), field("备注", it.note ? [it.note] : []));
+    const ans = el("div", "field");
+    ans.append(el("div", "label", "助理的回答"), el("div", "answer", it.answer));
+    const actions = el("div", "actions");
+    const pass = el("button", "v pass", "通过");
+    const fail = el("button", "v fail", "不通过");
+    [pass, fail].forEach((b) => { b.type = "button"; b.disabled = true; });
+    pass.id = id + "-pass"; fail.id = id + "-fail";
+    pass.onclick = () => save(it, "通过");
+    fail.onclick = () => save(it, "不通过");
+    actions.append(pass, fail);
+    const note = el("textarea");
+    note.id = id + "-note"; note.placeholder = "备注（选填，比如拿不准的原因）"; note.disabled = true;
+    note.onchange = () => { if (verdicts[id]) save(it, verdicts[id].verdict); };
+    card.append(head, grid, ans, actions, note);
+    list.append(card);
+    cards[id] = { card, pass, fail, note };
+  });
+}
+
+function render() {
+  let n = 0;
+  const onlyTodo = $("onlyTodo").checked;
+  items.forEach((it) => {
+    const id = docId(it.n), v = verdicts[id], c = cards[id];
+    c.pass.setAttribute("aria-pressed", String(v?.verdict === "通过"));
+    c.fail.setAttribute("aria-pressed", String(v?.verdict === "不通过"));
+    c.card.classList.toggle("done-pass", v?.verdict === "通过");
+    c.card.classList.toggle("done-fail", v?.verdict === "不通过");
+    if (v && document.activeElement !== c.note) c.note.value = v.note || "";
+    c.card.hidden = onlyTodo && !!v;
+    if (v) n++;
+  });
+  $("count").textContent = n + " / " + items.length;
+  $("fill").style.width = (100 * n / items.length) + "%";
+  $("allDone").hidden = n < items.length;
+}
+
+function setStatus(text, err) { const s = $("status"); s.textContent = text; s.classList.toggle("err", !!err); }
+
+async function save(it, verdict) {
+  const id = docId(it.n);
+  const note = cards[id].note.value.trim();
+  const prev = verdicts[id];
+  verdicts[id] = { verdict, note };
+  render();
+  try {
+    await db.collection("verdicts").doc(id).set({ n: it.n, probe: it.probe, config: it.config, verdict, note });
+    setStatus("已保存");
+  } catch (e) {
+    if (prev) verdicts[id] = prev; else delete verdicts[id];
+    render();
+    setStatus("没保存上：" + (e?.message || "请稍后再点一次"), true);
+  }
+}
+
+buildCards();
+render();
+$("onlyTodo").addEventListener("change", render);
+
+(async () => {
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db) { setStatus("保存服务不可用：请登录 claude.ai 后打开这个页面", true); return; }
+  Object.values(cards).forEach((c) => { c.pass.disabled = c.fail.disabled = c.note.disabled = false; });
+  setStatus("可以开始了");
+  db.collection("verdicts").onSnapshot((snap) => {
+    snap.docs.forEach((d) => { const x = d.data(); if (x) verdicts[d.id] = { verdict: x.verdict, note: x.note || "" }; });
+    render();
+  }, (e) => setStatus("连接中断，刷新页面后继续：" + e.message, true));
+})();
+</script>

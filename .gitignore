@@ -4,3 +4,5 @@ __pycache__/
 .env
 outputs/smoke/
 outputs/my_run/
+spotcheck/人工抽检表_第二轮.xlsx
+spotcheck/spotcheck.html
